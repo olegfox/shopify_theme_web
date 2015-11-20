@@ -1,0 +1,98 @@
+/* line 1, ../sass/header.scss */
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+/* line 6, ../sass/header.scss */
+header .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(Teya_Salat.jpg) top center no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+/* line 14, ../sass/header.scss */
+header .vertical-center {
+  position: absolute;
+  top: 126px;
+  bottom: 93px;
+  display: table;
+  margin: auto;
+  padding: 0 89px;
+}
+/* line 21, ../sass/header.scss */
+header .vertical-center .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 24, ../sass/header.scss */
+header .vertical-center .inner h1.slogan {
+  margin-bottom: 75px;
+}
+/* line 27, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs {
+  padding: 0 60px;
+}
+/* line 30, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs ul li {
+  display: inline-block;
+}
+/* line 32, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs ul li a {
+  font-family: FuturaPT-Bold;
+  font-size: 30px;
+  color: #B68B3E;
+  line-height: 46px;
+  text-align: left;
+}
+/* line 39, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs ul li span.line {
+  font-family: FuturaPT-Bold;
+  font-size: 30px;
+  color: #B68B3E;
+  line-height: 46px;
+  text-align: left;
+  padding: 0 10px;
+}
+/* line 53, ../sass/header.scss */
+header a.icon-arrow {
+  position: absolute;
+  background: url(Bottom_Arrow.svg) 0 0 no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  bottom: 49px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/* line 66, ../sass/header.scss */
+header .header-footer {
+  position: absolute;
+  left: 60px;
+  right: 50px;
+  bottom: 44px;
+}
+/* line 71, ../sass/header.scss */
+header .header-footer .pull-left {
+  float: left;
+  opacity: 0.3;
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: left;
+}
+/* line 80, ../sass/header.scss */
+header .header-footer .pull-right {
+  float: right;
+}
+/* line 82, ../sass/header.scss */
+header .header-footer .pull-right a {
+  display: inline-block;
+  padding: 0 11px;
+}

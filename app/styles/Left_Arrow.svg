@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>Line + Line Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Catalog" sketch:type="MSArtboardGroup" transform="translate(-59.000000, -1279.000000)" stroke="#202020" stroke-width="2">
+            <g id="Line-+-Line-Copy-2" sketch:type="MSLayerGroup" transform="translate(90.000000, 1310.000000) scale(-1, 1) translate(-90.000000, -1310.000000) translate(60.000000, 1280.000000)">
+                <circle id="Oval-16" opacity="0.599347015" sketch:type="MSShapeGroup" cx="30" cy="30" r="30"></circle>
+                <path d="M17,30 L41,30" id="Line" stroke-linecap="square" opacity="0.599999964" sketch:type="MSShapeGroup"></path>
+                <path d="M33,20 L42.6974644,30 L33,40" id="Line-Copy" stroke-linecap="square" opacity="0.599999964" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

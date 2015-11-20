@@ -1,0 +1,1147 @@
+/* line 5, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Bold';
+  src: url("../styles/FuturaPT-Bold.otf") format("opentype"), url("../styles/FuturaPT-Bold.ttf") format("truetype"), url("../styles/FuturaPT-Bold.woff") format("woff"), url("../styles/FuturaPT-Bold.eot"), url("../styles/FuturaPT-Bold.svg");
+}
+@font-face {
+  font-family: 'FuturaPT-Medium';
+  src: url("../styles/FuturaPT-Medium.otf") format("opentype"), url("../styles/FuturaPT-Medium.ttf") format("truetype"), url("../styles/FuturaPT-Medium.woff") format("woff"), url("../styles/FuturaPT-Medium.eot"), url("../styles/FuturaPT-Medium.svg");
+}
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url("../styles/FuturaPT-Book.otf") format("opentype");
+}
+/* line 56, ../sass/base.scss */
+html, body {
+  font-family: FuturaPT-Bold;
+  height: 100%;
+}
+
+/* line 61, ../sass/base.scss */
+h1 {
+  font-family: FuturaPT-Medium;
+  font-size: 90px;
+  color: #FFFFFF;
+  line-height: 90px;
+  text-align: left;
+  padding: 0 60px;
+}
+
+/* line 70, ../sass/base.scss */
+h2 {
+  font-family: FuturaPT-Medium;
+  font-size: 60px;
+  color: #202020;
+  line-height: 82px;
+  text-align: center;
+}
+
+/* line 78, ../sass/base.scss */
+p {
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #7C7C7C;
+  line-height: 20px;
+  text-align: left;
+}
+
+/* line 86, ../sass/base.scss */
+h3 {
+  font-family: FuturaPT-Medium;
+  font-size: 24px;
+  color: #202020;
+  line-height: 31px;
+  text-align: left;
+}
+
+/* line 94, ../sass/base.scss */
+a {
+  text-decoration: none;
+}
+/* line 96, ../sass/base.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 103, ../sass/base.scss */
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+/* line 108, ../sass/base.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 112, ../sass/base.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 116, ../sass/base.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 120, ../sass/base.scss */
+.little-text {
+  font-family: FuturaPT-Medium;
+  font-size: 15px;
+  color: #202020;
+  line-height: 20px;
+  text-align: left;
+}
+
+/* line 128, ../sass/base.scss */
+.middle-text {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #A8A8A8;
+  line-height: 38px;
+  text-align: left;
+}
+
+/* line 136, ../sass/base.scss */
+label {
+  font-family: FuturaPT-Medium;
+  font-size: 15px;
+  color: #202020;
+  line-height: 20px;
+}
+
+/* line 147, ../sass/base.scss */
+.btn {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+  border: 2px solid #BC8420;
+  border-radius: 6px;
+  width: 220px;
+  height: 45px;
+  background: #fff;
+}
+
+/* line 161, ../sass/base.scss */
+.pagination ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 164, ../sass/base.scss */
+.pagination ul li a {
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #2D363B;
+  line-height: 20px;
+  text-align: left;
+}
+/* line 171, ../sass/base.scss */
+.pagination ul li span {
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #7C7C7C;
+  line-height: 20px;
+  text-align: left;
+}
+/* line 179, ../sass/base.scss */
+.pagination ul li.next span {
+  color: #2D363B;
+  padding-right: 10px;
+}
+
+/* line 191, ../sass/base.scss */
+.breadcrumbs ul li {
+  display: inline-block;
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #A8A8A8;
+  line-height: 38px;
+  text-align: center;
+}
+/* line 198, ../sass/base.scss */
+.breadcrumbs ul li a {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #A8A8A8;
+  line-height: 38px;
+  text-align: center;
+}
+/* line 205, ../sass/base.scss */
+.breadcrumbs ul li span.line {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #A8A8A8;
+  line-height: 38px;
+  text-align: center;
+}
+
+/* line 218, ../sass/base.scss */
+.list {
+  display: inline-block;
+  max-width: 570px;
+}
+/* line 222, ../sass/base.scss */
+.list ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+/* line 225, ../sass/base.scss */
+.list ul li a {
+  font-family: FuturaPT-Book;
+  font-size: 19px;
+  color: #BC8420;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: solid 1px rgba(188, 132, 32, 0.3);
+}
+/* line 233, ../sass/base.scss */
+.list ul li.current a {
+  color: #A1A1A1;
+  background: #F0F0F0;
+  border-radius: 40px;
+  width: 48px;
+  height: 36px;
+  padding: 5px 15px;
+}
+
+/* line 247, ../sass/base.scss */
+.filters {
+  text-align: left;
+  padding: 25px 0px;
+  margin-top: -30px;
+  margin-bottom: 25px;
+  border-bottom: solid 1px #F0F0F0;
+}
+/* line 253, ../sass/base.scss */
+.filters label {
+  padding-right: 15px;
+}
+/* line 256, ../sass/base.scss */
+.filters .little-text {
+  display: inline-block;
+  margin-left: 14px;
+}
+/* line 260, ../sass/base.scss */
+.filters .list-filters {
+  float: right;
+  margin-top: -5px;
+}
+
+/* line 268, ../sass/base.scss */
+.wrap-header-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+/* line 272, ../sass/base.scss */
+.wrap-header-bar .header-bar {
+  font-size: 0;
+  padding: 30px 60px 27px 60px;
+  border-bottom: solid 1px rgba(232, 232, 232, 0.05);
+}
+/* line 276, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item {
+  display: inline-block;
+  width: 33.33%;
+  vertical-align: top;
+}
+/* line 286, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item.grid-item-3 {
+  text-align: right;
+}
+/* line 288, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item.grid-item-3 .wrap {
+  display: inline-block;
+  text-align: justify;
+  width: 100%;
+  max-width: 440px;
+}
+/* line 293, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item.grid-item-3 .wrap:after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+}
+/* line 301, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .menu-button {
+  display: inline-block;
+  width: 131px;
+  height: 41px;
+  border: 2px solid rgba(188, 132, 32, 0.3);
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+/* line 309, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .menu-button span.text {
+  display: inline-block;
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #BC8420;
+  margin-top: 11px;
+  margin-left: 15px;
+  vertical-align: top;
+}
+/* line 318, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .menu-button .vertical-line {
+  display: inline-block;
+  opacity: 0.3;
+  background: #BC8420;
+  width: 1px;
+  height: 25px;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+/* line 327, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .menu-button .lines {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 14px;
+  vertical-align: top;
+}
+/* line 332, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .menu-button .lines span.line {
+  display: block;
+  background-color: #BC8420;
+  width: 21px;
+  height: 2px;
+  margin-bottom: 4px;
+}
+/* line 344, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .langs {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 18px;
+  margin-left: 21px;
+}
+/* line 349, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .langs a {
+  font-family: FuturaPT-Medium;
+  font-size: 13px;
+  color: #A8A8A8;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+/* line 357, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .langs span.line {
+  font-family: FuturaPT-Medium;
+  font-size: 13px;
+  color: #A8A8A8;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  padding: 0 5px 0 3px;
+}
+/* line 369, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .logo {
+  display: inline-block;
+  font-family: FuturaPT-Bold;
+  font-size: 41px;
+  color: #FFFFFF;
+  line-height: 55px;
+  text-align: center;
+  margin-top: -2px;
+}
+/* line 381, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 16px;
+}
+/* line 385, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item ul li {
+  display: inline-block;
+  padding: 0 15px;
+  margin-top: 4px;
+  vertical-align: top;
+}
+/* line 390, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item ul li a {
+  font-family: FuturaPT-Medium;
+  font-size: 13px;
+  color: #A8A8A8;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+/* line 401, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .search {
+  display: inline-block;
+  margin-top: 17px;
+  vertical-align: top;
+}
+/* line 405, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .search .icon-search {
+  background: url(./Search.svg) 0 0 no-repeat;
+  width: 19px;
+  height: 18px;
+}
+/* line 412, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .cart {
+  display: inline-block;
+  border: 2px solid rgba(188, 132, 32, 0.3);
+  border-radius: 40px;
+  width: 102px;
+  height: 41px;
+  text-align: left;
+  margin-top: 5px;
+}
+/* line 420, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .cart span.text {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+  margin-left: 24px;
+}
+/* line 427, ../sass/base.scss */
+.wrap-header-bar .header-bar .grid-item .cart span.number {
+  display: inline-block;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 18px;
+  background: #BC8420;
+  width: 27px;
+  height: 27px;
+  margin-top: 7px;
+  margin-left: 10px;
+  line-height: 27px;
+  border-radius: 100%;
+}
+/* line 445, ../sass/base.scss */
+.wrap-header-bar .header-bar.header-bar-dark {
+  border-bottom: solid 1px #e8e8e8;
+  background: #fff;
+}
+/* line 448, ../sass/base.scss */
+.wrap-header-bar .header-bar.header-bar-dark .logo {
+  color: #202020;
+}
+
+/* line 458, ../sass/base.scss */
+footer {
+  border-top: solid 1px #E8E8E8;
+  margin-top: 81px;
+  padding: 81px 135px 97px 135px;
+}
+/* line 462, ../sass/base.scss */
+footer .inner-footer {
+  font-size: 0;
+}
+/* line 464, ../sass/base.scss */
+footer .inner-footer .left {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+}
+/* line 468, ../sass/base.scss */
+footer .inner-footer .left .list-catalogs {
+  margin-bottom: 30px;
+}
+/* line 471, ../sass/base.scss */
+footer .inner-footer .left .list-catalogs ul li {
+  display: inline-block;
+}
+/* line 473, ../sass/base.scss */
+footer .inner-footer .left .list-catalogs ul li a {
+  font-family: FuturaPT-Bold;
+  font-size: 30px;
+  color: #A8A8A8;
+  line-height: 46px;
+  text-align: left;
+}
+/* line 480, ../sass/base.scss */
+footer .inner-footer .left .list-catalogs ul li span.line {
+  font-family: FuturaPT-Bold;
+  font-size: 30px;
+  color: #A8A8A8;
+  line-height: 46px;
+  text-align: left;
+  padding: 0 10px;
+}
+/* line 491, ../sass/base.scss */
+footer .inner-footer .left .links {
+  width: 35%;
+  text-align: left;
+}
+/* line 495, ../sass/base.scss */
+footer .inner-footer .left .links ul li {
+  display: inline-block;
+  width: 50%;
+}
+/* line 498, ../sass/base.scss */
+footer .inner-footer .left .links ul li a {
+  font-family: FuturaPT-Book;
+  font-size: 19px;
+  color: #A8A8A8;
+  line-height: 36px;
+  text-align: left;
+}
+/* line 508, ../sass/base.scss */
+footer .inner-footer .left .copyright {
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #A8A8A8;
+  line-height: 19px;
+  text-align: left;
+  margin-top: 35px;
+}
+/* line 517, ../sass/base.scss */
+footer .inner-footer .right {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+/* line 521, ../sass/base.scss */
+footer .inner-footer .right p {
+  padding: 10px 0 35px 0;
+}
+/* line 525, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field {
+  border-bottom: solid 2px #BC8420;
+  max-width: 242px;
+}
+/* line 528, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field input[type='email'] {
+  border: 0;
+  font-family: FuturaPT-Book;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+/* line 2, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field input[type='email']::-webkit-input-placeholder {
+  font-family: FuturaPT-Book;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+}
+/* line 2, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field input[type='email']:-moz-placeholder {
+  font-family: FuturaPT-Book;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+}
+/* line 2, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field input[type='email']::-moz-placeholder {
+  font-family: FuturaPT-Book;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+}
+/* line 2, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field input[type='email']:-ms-input-placeholder {
+  font-family: FuturaPT-Book;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 22px;
+}
+/* line 542, ../sass/base.scss */
+footer .inner-footer .right form.subscribe .form-field button[type='submit'] {
+  float: right;
+  background: url(./Subscribe_Button.svg) 0 0 no-repeat;
+  width: 18px;
+  height: 19px;
+  border: 0;
+  cursor: pointer;
+}
+/* line 552, ../sass/base.scss */
+footer .inner-footer .right .social {
+  margin: 40px -11px 0 -11px;
+}
+/* line 554, ../sass/base.scss */
+footer .inner-footer .right .social a {
+  padding: 0 11px;
+}
+
+/* line 1, ../sass/header.scss */
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+/* line 6, ../sass/header.scss */
+header .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(Teya_Salat.jpg) top center no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+/* line 14, ../sass/header.scss */
+header .vertical-center {
+  position: absolute;
+  top: 126px;
+  bottom: 93px;
+  display: table;
+  margin: auto;
+  padding: 0 89px;
+}
+/* line 21, ../sass/header.scss */
+header .vertical-center .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 24, ../sass/header.scss */
+header .vertical-center .inner h1.slogan {
+  margin-bottom: 75px;
+}
+/* line 27, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs {
+  padding: 0 60px;
+}
+/* line 30, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs ul li {
+  display: inline-block;
+}
+/* line 32, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs ul li a {
+  font-family: FuturaPT-Bold;
+  font-size: 30px;
+  color: #B68B3E;
+  line-height: 46px;
+  text-align: left;
+}
+/* line 39, ../sass/header.scss */
+header .vertical-center .inner .list-catalogs ul li span.line {
+  font-family: FuturaPT-Bold;
+  font-size: 30px;
+  color: #B68B3E;
+  line-height: 46px;
+  text-align: left;
+  padding: 0 10px;
+}
+/* line 53, ../sass/header.scss */
+header a.icon-arrow {
+  position: absolute;
+  background: url(Bottom_Arrow.svg) 0 0 no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  bottom: 49px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/* line 66, ../sass/header.scss */
+header .header-footer {
+  position: absolute;
+  left: 60px;
+  right: 50px;
+  bottom: 44px;
+}
+/* line 71, ../sass/header.scss */
+header .header-footer .pull-left {
+  float: left;
+  opacity: 0.3;
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: left;
+}
+/* line 80, ../sass/header.scss */
+header .header-footer .pull-right {
+  float: right;
+}
+/* line 82, ../sass/header.scss */
+header .header-footer .pull-right a {
+  display: inline-block;
+  padding: 0 11px;
+}
+
+/* line 2, ../sass/catalog.scss */
+section.catalog {
+  position: relative;
+  text-align: center;
+  padding: 147px 135px 0 135px;
+}
+/* line 6, ../sass/catalog.scss */
+section.catalog .list {
+  margin-top: 15px;
+}
+
+/* line 14, ../sass/catalog.scss */
+.items-catalog ul {
+  font-size: 0;
+  margin: 0 -20px;
+}
+/* line 17, ../sass/catalog.scss */
+.items-catalog ul li {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 23, ../sass/catalog.scss */
+.items-catalog ul li.size-20 {
+  width: 20%;
+}
+/* line 26, ../sass/catalog.scss */
+.items-catalog ul li.size-40 {
+  width: 40%;
+}
+/* line 29, ../sass/catalog.scss */
+.items-catalog ul li .inner {
+  padding: 0 20px 20px 20px;
+}
+/* line 31, ../sass/catalog.scss */
+.items-catalog ul li .inner img {
+  width: 100%;
+}
+/* line 34, ../sass/catalog.scss */
+.items-catalog ul li .inner a.title {
+  display: inline-block;
+  width: 100%;
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #7C7C7C;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 44, ../sass/catalog.scss */
+.items-catalog ul li .inner span.price {
+  display: inline-block;
+  width: 100%;
+  font-family: FuturaPT-Medium;
+  font-size: 15px;
+  color: #202020;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* line 61, ../sass/catalog.scss */
+.footer-catalog {
+  height: 45px;
+  line-height: 45px;
+  padding-top: 81px;
+}
+/* line 65, ../sass/catalog.scss */
+.footer-catalog .little-text {
+  float: left;
+  margin-top: 15px;
+}
+/* line 69, ../sass/catalog.scss */
+.footer-catalog .btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* line 75, ../sass/catalog.scss */
+.footer-catalog .pagination {
+  float: right;
+  margin-top: -7px;
+}
+
+/* line 2, ../sass/main_catalog.scss */
+section.main_catalog {
+  position: relative;
+  text-align: center;
+  padding: 147px 135px 0 135px;
+}
+/* line 9, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul {
+  font-size: 0;
+}
+/* line 11, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+/* line 15, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner {
+  text-align: left;
+  padding: 0 10px;
+}
+/* line 18, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner .middle-text {
+  margin-top: 45px;
+  margin-left: 8px;
+}
+/* line 22, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner h2 {
+  font-family: FuturaPT-Medium;
+  font-size: 45px;
+  color: #202020;
+  line-height: 45px;
+  text-align: left;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+/* line 31, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner p {
+  margin-top: 19px;
+  margin-left: 5px;
+  padding-right: 50px;
+}
+/* line 36, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner img {
+  width: 100%;
+}
+/* line 40, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner a.view-all {
+  font-family: FuturaPT-Book;
+  font-size: 19px;
+  color: #BC8420;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: solid 2px #BC8420;
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: 4px;
+  line-height: 26px;
+}
+/* line 52, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner a.title {
+  display: inline-block;
+  width: 100%;
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #7C7C7C;
+  line-height: 20px;
+  text-align: center;
+  border-bottom: 0;
+  margin-top: 9px;
+}
+/* line 64, ../sass/main_catalog.scss */
+section.main_catalog .wrap-arrivals .arrivals ul li .inner span.price {
+  display: inline-block;
+  width: 100%;
+  font-family: FuturaPT-Medium;
+  font-size: 15px;
+  color: #202020;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 3px;
+}
+/* line 82, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks {
+  padding-top: 72px;
+}
+/* line 85, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul {
+  font-size: 0;
+  margin: 0 -17.5px;
+}
+/* line 88, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 91, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li .inner {
+  margin: 0 17.5px;
+  padding: 72px 60px;
+  border: solid 1px #E8E8E8;
+}
+/* line 96, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.size-40 {
+  width: 40%;
+}
+/* line 99, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.size-60 {
+  width: 60%;
+}
+/* line 102, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block {
+  text-align: left;
+}
+/* line 104, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block .links {
+  width: 45%;
+  text-align: left;
+  margin-top: 22px;
+  margin-left: 20px;
+}
+/* line 110, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block .links ul li {
+  display: inline-block;
+  width: 50%;
+}
+/* line 113, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block .links ul li a {
+  font-family: FuturaPT-Medium;
+  font-size: 19px;
+  color: #BC8420;
+  line-height: 36px;
+  text-align: left;
+  border: 0;
+  margin-top: 0px;
+}
+/* line 125, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block .middle-text {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 38px;
+  text-align: left;
+}
+/* line 132, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block h2 {
+  font-family: FuturaPT-Medium;
+  font-size: 45px;
+  color: #202020;
+  line-height: 45px;
+  text-align: left;
+  margin-top: -4px;
+  padding-right: 15px;
+  width: 130px;
+}
+/* line 142, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block p {
+  width: 220px;
+  margin-top: 20px;
+}
+/* line 146, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block a {
+  font-family: FuturaPT-Book;
+  font-size: 19px;
+  color: #BC8420;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: solid 2px #BC8420;
+  display: inline-block;
+  margin-top: 21px;
+  line-height: 27px;
+}
+/* line 159, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block-dark .middle-text {
+  color: #BC8420;
+}
+/* line 162, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block-dark .inner {
+  padding: 72px 60px 107px 60px;
+}
+/* line 165, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block-dark h2 {
+  color: #BC8420;
+  margin-top: 6px;
+  padding-right: 15px;
+}
+/* line 170, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block-dark p {
+  color: #BC8420;
+  margin-top: 20px;
+}
+/* line 174, ../sass/main_catalog.scss */
+section.main_catalog .wrap-blocks .blocks ul li.block-dark a {
+  display: inline-block;
+  margin-top: 21px;
+  line-height: 27px;
+}
+/* line 187, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel {
+  margin: 72px -20px 0 -20px;
+}
+/* line 190, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel .slick-next,
+section.main_catalog .wrap-carousel .carousel .slick-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -80px;
+  margin: auto 0;
+  width: 60px;
+  height: 60px;
+  background: url(./carousel-arrows.png) 0 0 no-repeat;
+  background-size: cover;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 206, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel .slick-next {
+  left: inherit;
+  right: -80px;
+  background: url(./carousel-arrows.png) -60px 0 no-repeat;
+  background-size: cover;
+}
+/* line 212, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel .middle-text {
+  text-align: center;
+}
+/* line 215, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel h2 {
+  font-family: FuturaPT-Medium;
+  font-size: 45px;
+  color: #202020;
+  line-height: 58px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 224, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel ul li {
+  margin: 0 20px;
+}
+/* line 226, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel ul li:focus {
+  outline: 0;
+}
+/* line 230, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel ul li .inner img {
+  width: 100%;
+}
+/* line 233, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel ul li .inner a.title {
+  display: inline-block;
+  width: 100%;
+  font-family: FuturaPT-Book;
+  font-size: 15px;
+  color: #7C7C7C;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+/* line 243, ../sass/main_catalog.scss */
+section.main_catalog .wrap-carousel .carousel ul li .inner span.price {
+  font-family: FuturaPT-Medium;
+  font-size: 15px;
+  color: #202020;
+  line-height: 20px;
+  text-align: center;
+}
+/* line 258, ../sass/main_catalog.scss */
+section.main_catalog .wrap-adv {
+  margin-top: 66px;
+}
+/* line 260, ../sass/main_catalog.scss */
+section.main_catalog .wrap-adv .adv {
+  padding: 109px 0px;
+}
+/* line 262, ../sass/main_catalog.scss */
+section.main_catalog .wrap-adv .adv .middle-text {
+  font-family: FuturaPT-Medium;
+  font-size: 17px;
+  color: #BC8420;
+  line-height: 38px;
+  text-align: center;
+}
+/* line 269, ../sass/main_catalog.scss */
+section.main_catalog .wrap-adv .adv h1 {
+  font-family: FuturaPT-Medium;
+  font-size: 126px;
+  color: #BC8420;
+  line-height: 109px;
+  text-align: center;
+}
+/* line 276, ../sass/main_catalog.scss */
+section.main_catalog .wrap-adv .adv p {
+  font-family: FuturaPT-Book;
+  font-size: 19px;
+  color: #BC8420;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 21px;
+}
+/* line 289, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog {
+  padding: 109px 0 0 0;
+}
+/* line 291, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog ul {
+  margin: 0;
+}
+/* line 294, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog .main {
+  text-align: left;
+  border: solid 1px #E8E8E8;
+  padding: 60px;
+}
+/* line 298, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog .main h2 {
+  margin-top: 20px;
+}
+/* line 301, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog .main a.title {
+  text-align: left;
+  margin-top: 10px;
+}
+/* line 305, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog .main span.price {
+  text-align: left;
+}
+/* line 309, ../sass/main_catalog.scss */
+section.main_catalog .items-catalog h2 {
+  font-family: FuturaPT-Medium;
+  font-size: 24px;
+  color: #202020;
+  line-height: 31px;
+  text-align: left;
+}

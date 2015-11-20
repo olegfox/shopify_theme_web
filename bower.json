@@ -1,0 +1,9 @@
+{
+  "name": "shopify-theme-web",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "imagesloaded": "~3.2.0",
+    "slick-carousel": "~1.5.8"
+  }
+}

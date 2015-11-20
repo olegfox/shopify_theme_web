@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="14px" viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Product_Mobile" sketch:type="MSArtboardGroup" transform="translate(-329.000000, -24.000000)" fill="#BC8420">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(336.000000, 31.000000) scale(-1, 1) translate(-336.000000, -31.000000) translate(328.000000, 24.000000)">
+                <circle id="Oval" sketch:type="MSShapeGroup" cx="3.5" cy="12.5" r="1.5"></circle>
+                <circle id="Oval" sketch:type="MSShapeGroup" cx="11.5" cy="12.5" r="1.5"></circle>
+                <path d="M13.968694,0.000103637262 L12.6984914,0.000103637262 C11.7811883,0.000103637262 11.6757308,0.833204021 11.6745525,0.840606367 L11.6468626,1.12795198 L11.6468626,1.12660609 L11.3440406,2.64745171 C11.2774669,2.87625149 11.0759784,3.24300408 10.4520709,3.24300408 L-6.43929354e-12,3.24300408 L1.84285427,10 L11.8324441,10 L12.7179332,4.38498417 L12.9736234,3.01285842 L12.9907087,2.92201144 C13.0413754,2.68109873 13.2634841,2.00479349 14.1807872,1.98729704 L14.2933144,1.98729704 C14.5201363,1.97383823 15.0138422,1.86011128 14.9997026,1.10372612 L14.9997026,0.977213295 C14.9997026,-0.0308516274 13.968694,0.000103637262 13.968694,0.000103637262 L13.968694,0.000103637262 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
