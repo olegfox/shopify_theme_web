@@ -9,6 +9,7 @@ header {
     height: 100%;
     background: url(Teya_Salat.jpg) top center no-repeat;
     background-size: cover;
+    opacity: 0.5;
     z-index: 0;
   }
   .vertical-center{
@@ -21,7 +22,7 @@ header {
     .inner{
       display: table-cell;
       vertical-align: middle;
-      h1.slogan{
+      h1{
         margin-bottom: 75px;
       }
       .list-catalogs{

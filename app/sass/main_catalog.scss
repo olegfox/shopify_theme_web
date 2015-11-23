@@ -80,6 +80,7 @@ section.main_catalog{
 
   // Blocks
   .wrap-blocks{
+    visibility: hidden;
     padding-top: 72px;
     .blocks{
       ul{
@@ -185,6 +186,7 @@ section.main_catalog{
 
   // Carousel
   .wrap-carousel{
+    display: none;
     margin: 72px -20px 0 -20px;
     .carousel{
       .slick-next,
@@ -196,7 +198,7 @@ section.main_catalog{
         margin: auto 0;
         width: 60px;
         height: 60px;
-        background: url(./carousel-arrows.png) 0 0 no-repeat;
+        background: url(./Left_Arrow.svg) 0 0 no-repeat;
         background-size: cover;
         border: 0;
         font-size: 0;
@@ -206,7 +208,7 @@ section.main_catalog{
       .slick-next{
         left: inherit;
         right: -80px;
-        background: url(./carousel-arrows.png) -60px 0 no-repeat;
+        background: url(./Right_Arrow.svg) 0 0 no-repeat;
         background-size: cover;
       }
       .middle-text{
@@ -256,6 +258,7 @@ section.main_catalog{
 
   // Adv
   .wrap-adv{
+    display: none;
     margin-top: 66px;
     .adv{
       padding: 109px 0px;
@@ -287,6 +290,7 @@ section.main_catalog{
 
   // Items Catalog
   .items-catalog{
+    display: none;
     padding: 109px 0 0 0;
     ul{
       margin: 0;

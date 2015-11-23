@@ -1,12 +1,1 @@
-@font-face {
-  font-family: 'FuturaPT-Bold';
-  src: url("../styles/FuturaPT-Bold.otf") format("opentype"), url("../styles/FuturaPT-Bold.ttf") format("truetype"), url("../styles/FuturaPT-Bold.woff") format("woff"), url("../styles/FuturaPT-Bold.eot"), url("../styles/FuturaPT-Bold.svg");
-}
-@font-face {
-  font-family: 'FuturaPT-Medium';
-  src: url("../styles/FuturaPT-Medium.otf") format("opentype"), url("../styles/FuturaPT-Medium.ttf") format("truetype"), url("../styles/FuturaPT-Medium.woff") format("woff"), url("../styles/FuturaPT-Medium.eot"), url("../styles/FuturaPT-Medium.svg");
-}
-@font-face {
-  font-family: 'FuturaPT-Book';
-  src: url("../styles/FuturaPT-Book.otf") format("opentype");
-}
+@font-face{font-family:'FuturaPT-Bold';src:url("./FuturaPT-Bold.otf") format("opentype"),url("./FuturaPT-Bold.ttf") format("truetype"),url("./FuturaPT-Bold.woff") format("woff"),url("./FuturaPT-Bold.eot"),url("./FuturaPT-Bold.svg")}@font-face{font-family:'FuturaPT-Medium';src:url("./FuturaPT-Medium.otf") format("opentype"),url("./FuturaPT-Medium.ttf") format("truetype"),url("./FuturaPT-Medium.woff") format("woff"),url("./FuturaPT-Medium.eot"),url("./FuturaPT-Medium.svg")}@font-face{font-family:'FuturaPT-Book';src:url("./FuturaPT-Book.otf") format("opentype")}

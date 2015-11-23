@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
+  <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css">
   <!-- bower:css -->
 
   <!-- endbower -->
@@ -16,13 +17,167 @@
   <link rel="stylesheet" href="styles/theme.css">
   <!-- endbuild -->
 </head>
+<body>
+<!-- Menu sidebar -->
+<div id="sidebar">
+  <div id="sidebar-wrapper" class="sidebar-wrapper">
+    <div class="header">
+      Menu
+    </div>
+    <div class="lists-menu">
+      <ul>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Category</a>
+          <ul>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+            <li>
+              <a href="#">Subcategory</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end Menu sidebar -->
 
 <!-- Header bar -->
 <div class="wrap-header-bar">
   <div class="header-bar header-bar-white">
     <div class="grid-item text-left grid-item-1">
       <!-- Menu button -->
-      <div class="menu-button">
+      <div class="menu-button" id="toggle-sidebar">
         <div class="lines">
           <span class="line"></span>
           <span class="line"></span>
@@ -90,7 +245,7 @@
     <div class="background"></div>
     <div class="vertical-center">
       <div class="inner">
-        <h1 class="slogan">
+        <h1>
           Tatoo Supplies & <br/>
           Equipment
         </h1>
@@ -551,6 +706,8 @@
 <script src="../bower_components/jquery-masonry/dist/masonry.pkgd.min.js"></script>
 <script src="../bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
 <script src="../bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="../bower_components/simpler-sidebar/dist/jquery.simpler-sidebar.min.js"></script>
+<script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

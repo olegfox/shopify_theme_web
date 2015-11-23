@@ -50,4 +50,28 @@ $(function(){
       $('.header-bar-dark').switchClass('header-bar-dark', 'header-bar-white', 500);
     }
   });
+
+  /**
+   * Боковое меню слева
+   */
+  $( document ).ready(function() {
+    $( '#sidebar' ).simplerSidebar({
+      top: 0,
+      opener: '#toggle-sidebar',
+      attr: 'simplersidebar',
+      animation: {
+        easing: 'easeOutQuint'
+      },
+      sidebar: {
+        align: 'left',
+        width: 300,
+        closingLinks: '.close-sb'
+      }
+    });
+  });
+
+  /**
+   * Кастомный скроллбар
+   */
+  $('body').perfectScrollbar();
 });
