@@ -2,7 +2,8 @@
 section.main_catalog{
   position: relative;
   text-align: center;
-  padding: 147px 135px 0 135px;
+  padding: 147px 135px 81px 135px;
+  background-color: #ffffff;
   // Arrivals
   .wrap-arrivals{
     .arrivals{
@@ -80,7 +81,7 @@ section.main_catalog{
 
   // Blocks
   .wrap-blocks{
-    visibility: hidden;
+    display: none;
     padding-top: 72px;
     .blocks{
       ul{

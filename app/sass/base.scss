@@ -22,37 +22,6 @@
   }
 }
 
-@mixin transition($transition...) {
-  -moz-transition:    $transition;
-  -o-transition:      $transition;
-  -webkit-transition: $transition;
-  transition:         $transition;
-}
-@mixin transition-property($property...) {
-  -moz-transition-property:    $property;
-  -o-transition-property:      $property;
-  -webkit-transition-property: $property;
-  transition-property:         $property;
-}
-@mixin transition-duration($duration...) {
-  -moz-transition-property:    $duration;
-  -o-transition-property:      $duration;
-  -webkit-transition-property: $duration;
-  transition-property:         $duration;
-}
-@mixin transition-timing-function($timing...) {
-  -moz-transition-timing-function:    $timing;
-  -o-transition-timing-function:      $timing;
-  -webkit-transition-timing-function: $timing;
-  transition-timing-function:         $timing;
-}
-@mixin transition-delay($delay...) {
-  -moz-transition-delay:    $delay;
-  -o-transition-delay:      $delay;
-  -webkit-transition-delay: $delay;
-  transition-delay:         $delay;
-}
-
 html, body {
   font-family: FuturaPT-Bold;
   height: 100%;
@@ -154,6 +123,7 @@ select{
   width:220px;
   height:45px;
   background: #fff;
+  cursor: pointer;
 }
 
 .pagination{
@@ -260,6 +230,38 @@ select{
   .list-filters{
     float: right;
     margin-top: -5px;
+    .wrap-selec{
+      position: relative;
+      display: inline-block;
+      &:after{
+        position: absolute;
+        content: ' ';
+        width: 9px;
+        height: 5px;
+        top: 15px;
+        right: 11px;
+        background: #fff url(Dropdown_Arrow.svg) 0 0 no-repeat;
+      }
+    }
+    #sort-by{
+      border: 2px solid #E8E8E8;
+      border-radius:4px;
+      background: #fff url(select-bg.png) 113px 0 no-repeat;
+      width:148px;
+      height:32px;
+      font-family:FuturaPT-Book;
+      font-size:14px;
+      color:#7C7C7C;
+      line-height:18px;
+      cursor: pointer;
+      padding-left: 5px;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+      &:focus{
+        outline: 0;
+      }
+    }
   }
 }
 // end Filters
@@ -451,6 +453,12 @@ select{
       }
     }
     // end Dark-theme
+
+    // Gray-theme
+    &.header-bar-gray{
+      background: #f4f4f4;
+    }
+    // end Gray-theme
   }
   // end Header bar
 }
@@ -458,7 +466,6 @@ select{
 // Footer
 footer{
   border-top: solid 1px #E8E8E8;
-  margin-top: 81px;
   padding: 81px 135px 97px 135px;
   .inner-footer{
     font-size: 0;
@@ -560,3 +567,9 @@ footer{
   }
 }
 // end Footer
+
+// Ps-scrollbar
+.ps-container:hover>.ps-scrollbar-x-rail, .ps-container:hover>.ps-scrollbar-y-rail{
+  z-index: 20;
+}
+// end Ps-scrollbar

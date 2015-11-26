@@ -173,9 +173,9 @@ module.exports = function (grunt) {
       dist: {
         files: {
           src: [
-            '<%= config.dist %>/scripts/{,*/}*.js',
+            '<%= config.dist %>/styles/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
-            '<%= config.dist %>/images/{,*/}*.*',
+            '<%= config.dist %>/styles/{,*/}*.*',
             '<%= config.dist %>/styles/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]
@@ -250,32 +250,37 @@ module.exports = function (grunt) {
         }]
       }
     },
-
-    // By default, your `index.html`'s <!-- Usemin block --> will take care
-    // of minification. These next options are pre-configured if you do not
-    // wish to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%= config.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= config.dist %>/scripts/scripts.js': [
-    //         '<%= config.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
+     cssmin: {
+       dist: {
+         files: {
+           'styles/theme.css': [
+             'bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css',
+             'bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css',
+             'app/styles/slick.css',
+             'app/styles/theme.css'
+           ]
+         }
+       }
+     },
+     uglify: {
+       dist: {
+         files: {
+           'js/script.js': [
+             'bower_components/jquery/dist/jquery.min.js',
+             'bower_components/jquery-ui/jquery-ui.min.js',
+             'bower_components/jquery-masonry/dist/masonry.pkgd.min.js',
+             'bower_components/imagesloaded/imagesloaded.pkgd.min.js',
+             'bower_components/slick-carousel/slick/slick.min.js',
+             'bower_components/simpler-sidebar/dist/jquery.simpler-sidebar.min.js',
+             'bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
+             'app/styles/*.js'
+           ]
+         }
+       }
+     },
+     concat: {
+       dist: {}
+     },
 
     // Copies remaining files to places other tasks can use
     copy: {
@@ -368,7 +373,7 @@ module.exports = function (grunt) {
     'autoprefixer',
     'concat',
     'cssmin',
-    'uglify',
+    //'uglify',
     'copy:dist',
     'rev',
     'usemin',
