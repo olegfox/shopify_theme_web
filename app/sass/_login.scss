@@ -1,0 +1,177 @@
+// _login.scss
+
+.wrap-login {
+  position: fixed;
+  height: 0;
+  width: 100%;
+  background-color: #202020;
+  text-align: center;
+  overflow: hidden;
+  @include transition(all 0.5s ease-in-out);
+
+  &.visible {
+    height: 393px;
+    @include transition(all 0.5s ease-in-out);
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 22px;
+    font-family: FuturaPT-Medium;
+    padding-top: 58px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    background: none;
+    text-align: center;
+    height: 41px;
+    width: 235px;
+    line-height: 39px;
+  }
+
+  .login {
+    font-size: 0;
+
+    .pull-left,
+    .pull-right {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+
+    .pull-left {
+
+      h3 {
+
+      }
+
+      p {
+        font-size: 18px;
+        max-width: 350px;
+        margin: 0 auto 34px auto;
+        line-height: 24px;
+        text-align: center;
+        color: #6e6e6e;
+      }
+    }
+
+    .vertical-border {
+      position: absolute;
+      width: 1px;
+      background-color: #373737;
+      top: 27px;
+      bottom: 27px;
+      left: 50%;
+    }
+
+    .pull-right {
+
+      h3 {
+        padding-bottom: 11px;
+      }
+
+      .help {
+        font-size: 15px;
+        padding-bottom: 34px;
+        font-family: FuturaPT-Book;
+        color: #6e6e6e;
+      }
+
+      form {
+
+        .for-input {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 12px;
+        }
+
+        input {
+          background-color: #282828;
+          border: 0;
+          width: 235px;
+          height: 41px;
+          border-radius: 6px;
+          text-align: center;
+          font-family: FuturaPT-Book;
+          font-size: 17px;
+          color: #6F6F6F;
+          line-height: 23px;
+
+          &.error {
+            border: solid 1px red;
+            width: 233px;
+            heght: 39px;
+          }
+
+          @include placeholder {
+            color: #666666;
+          }
+
+          &:-webkit-autofill {
+            background-color: #282828!important;
+            color: #6F6F6F!important;
+            &:focus,
+            &.hover {
+              background-color: #282828!important;
+              color: #6F6F6F!important;
+            }
+          }
+
+          &[type="email"] {
+
+          }
+
+          &[type="password"] {
+
+          }
+
+        }
+
+        .btn {
+          height: 44px;
+          line-height: 37px;
+          margin-top: 9px;
+        }
+
+        a.sub-link {
+          display: block;
+          margin-top: 19px;
+          font-family: FuturaPT-Book;
+          font-size: 13px;
+          color: #7C7C7C;
+
+          &:hover {
+            opacity: 0.5;
+            @include transition(opacity 0.1s ease-in-out);
+          }
+
+        }
+
+      }
+
+    }
+
+    .close {
+      position: absolute;
+      background: url("icon-login-close.png") 0 0 no-repeat;
+      background-size: contain;
+      width: 17px;
+      height: 17px;
+      top: 22px;
+      right: 22px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+        @include transition(opacity 0.1s ease-in-out);
+      }
+
+    }
+
+  }
+
+}

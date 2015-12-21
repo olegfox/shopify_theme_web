@@ -1,0 +1,479 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>shopify_theme_web</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css">
+  <!-- bower:css -->
+
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/slick.css">
+  <link rel="stylesheet" href="styles/theme.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+<div class="content">
+  <!-- Header bar -->
+  <div class="wrap-header-bar">
+    <div class="header-bar header-bar-dark header-bar-static">
+      <div class="grid-item text-left grid-item-1">
+        <!-- Menu button -->
+        <div class="menu-button" id="toggle-sidebar">
+          <div class="lines">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <span class="vertical-line"></span>
+            <span class="text">
+              Menu
+            </span>
+        </div>
+        <!-- end Menu button -->
+
+        <!-- Langs -->
+        <div class="langs">
+          <a href="#">en</a>
+          <span class="line">/</span>
+          <a href="#">ru</a>
+        </div>
+        <!-- end Langs -->
+      </div>
+
+      <!-- Logo -->
+      <div class="grid-item text-center grid-item-2">
+        <a href="#" class="logo">
+          Tattooist
+        </a>
+      </div>
+      <!-- end Logo -->
+
+      <!-- Right menu -->
+      <div class="grid-item grid-item-3">
+        <div class="wrap">
+          <ul>
+            <li>
+              <a href="#">shipping</a>
+            </li>
+            <li>
+              <a href="#">help</a>
+            </li>
+            <li>
+              <a href="/account/login/">sign in</a>
+            </li>
+          </ul>
+
+          <div class="search" id="toggle-search">
+            <div class="icon-search"></div>
+          </div>
+
+          <div class="cart" id="toggle-cart">
+          <span class="text">
+            Cart
+          </span>
+            <span class="number">3</span>
+          </div>
+        </div>
+      </div>
+      <!-- end Right menu -->
+    </div>
+  </div>
+  <!-- end Header bar -->
+
+ <div class="wrap-section">
+
+   <section class="account">
+     <div class="wrap-head">
+       <!-- Breadcrumbs -->
+       <div class="breadcrumbs">
+         <ul>
+           <li>
+             <a href="#">Home</a>
+             <span class="line">/</span>
+           </li>
+           <li>My account</li>
+         </ul>
+       </div>
+       <!-- end Breadcrumbs -->
+
+       <div class="wrap-link-tabs">
+         <div class="link-tabs">
+           <ul>
+             <li>
+               <a href="#account">Account</a>
+             </li>
+             <li class="current">
+               <a href="#my_orders">My Orders</a>
+             </li>
+             <li>
+               <a href="#">Sign Out</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+
+     </div>
+
+     <!-- Tabs content -->
+     <div class="tab tab-active" id="my_orders">
+       <div class="list-order">
+
+         <h1>Recent Orders</h1>
+
+         <table>
+
+           <thead>
+           <tr>
+             <th>Order #</th>
+             <th>Date</th>
+             <th>Ship to</th>
+             <th>Order total</th>
+             <th>Status</th>
+           </tr>
+           </thead>
+
+           <tbody>
+           <!-- Select order -->
+           <tr>
+             <td>2400138024</td>
+             <td>3/7/2015</td>
+             <td>Aleksey Rybin</td>
+             <td>$1250</td>
+             <td><span class="icon-order icon-order-process"></span>Process</td>
+           </tr>
+           <tr class="select hide">
+             <td colspan="5">
+               <div class="info-order">
+                 <div class="products-column">
+                   <div class="head">
+                     order
+                   </div>
+                   <ul>
+                     <li>
+                       <a href="#">Nuclear Colors Complete Set 1/2 Oz</a>
+                       <span class="price">$110</span>
+                     </li>
+                     <li>
+                       <a href="#">Nuclear Colors Complete Set 1/2 Oz</a>
+                       <span class="price">$110</span>
+                     </li>
+                     <li>
+                       <a href="#">Nuclear Colors Complete Set 1/2 Oz</a>
+                       <span class="price">$110</span>
+                     </li>
+                     <li>
+                       <a href="#">Nuclear Colors Complete Set 1/2 Oz</a>
+                       <span class="price">$110</span>
+                     </li>
+                     <li>
+                       <a href="#">Nuclear Colors Complete Set 1/2 Oz</a>
+                       <span class="price">$110</span>
+                     </li>
+                     <li>
+                       <a href="#">Nuclear Colors Complete Set 1/2 Oz</a>
+                       <span class="price">$110</span>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="shipping-address-column">
+                   <div class="head">shipping address</div>
+                   <p>Russia, 630099, Novosibitsk, Sovetskaya 10-66
+                     +7 999 214 89-98</p>
+                 </div>
+               </div>
+             </td>
+           </tr>
+           <tr class="select hide">
+             <td colspan="2">
+               <strong><span class="head">Subtotal</span></strong>
+               $1200
+             </td>
+             <td colspan="1">
+               <strong><span class="head">Shipping</span></strong>
+               $50
+             </td>
+             <td colspan="2">
+               <strong>Total</strong>
+               <span class="total">$1250</span>
+             </td>
+           </tr>
+           <!-- end Select order -->
+
+           <!-- Canceled order -->
+           <tr class="canceled">
+           <td>2400138024</td>
+           <td>3/7/2015</td>
+           <td>Aleksey Rybin</td>
+           <td>$1250</td>
+           <td><span class="icon-order icon-order-canceled"></span>Canceled</td>
+           </tr>
+           <!-- end Canceled order -->
+
+           <!-- Simple order -->
+           <tr>
+           <td>2400138024</td>
+           <td>3/7/2015</td>
+           <td>Aleksey Rybin</td>
+           <td>$1250</td>
+           <td><span class="icon-order icon-order-complete"></span>Complete</td>
+           </tr>
+           <tr>
+           <td>2400138024</td>
+           <td>3/7/2015</td>
+           <td>Aleksey Rybin</td>
+           <td>$1250</td>
+           <td><span class="icon-order icon-order-complete"></span>Complete</td>
+           </tr>
+           <!-- end Simple order -->
+           </tbody>
+
+         </table>
+
+       </div>
+     </div>
+     <div class="tab" id="account">
+
+       <div class="form-account">
+         <!--<div class="left">-->
+           <!--<div class="section-header">-->
+             <!--<h1 class="section-header__title">Account Information</h1>-->
+           <!--</div>-->
+
+           <!--<div class="inner-left">-->
+             <!--<form class="reset_password" method="post" action="https://tattooist-shop.myshopify.com/account/reset" accept-charset="UTF-8">-->
+               <!--<input type="hidden" value="reset_customer_password" name="form_type">-->
+               <!--<input type="hidden" name="utf8" value="✓">-->
+
+               <!--<div class="section-header">-->
+                 <!--<h4 class="section-header__title">Change Password</h4>-->
+               <!--</div>-->
+
+               <!--<label for="ResetPassword">New Password</label>-->
+               <!--<input type="password" value="" name="customer[password]" id="ResetPassword">-->
+
+               <!--<label for="PasswordConfirmation">Confirm</label>-->
+               <!--<input type="password" value="" name="customer[password_confirmation]" id="PasswordConfirmation">-->
+
+             <!--</form>-->
+           <!--</div>-->
+         <!--</div>-->
+
+         <div class="left">
+           <div class="section-header">
+             <h1 class="section-header__title">Shipping Address</h1>
+           </div>
+           <div class="inner-left">
+             <form method="post" action="/account/addresses/2442039941" id="address_form_2442039941" accept-charset="UTF-8"><input type="hidden" value="customer_address" name="form_type"><input type="hidden" name="utf8" value="✓">
+
+               <div class="grid">
+                 <div class="grid-item">
+                   <div class="grid-item-inner">
+                     <label for="AddressFirstName_2442039941">First Name</label>
+                     <input type="text" id="AddressFirstName_2442039941" class="address_form" name="address[first_name]" value="Олег" autocapitalize="words">
+                   </div>
+                 </div>
+                 <div class="grid-item">
+                   <div class="grid-item-inner">
+                     <label for="AddressLastName_2442039941">Last Name</label>
+                     <input type="text" id="AddressLastName_2442039941" class="address_form" name="address[last_name]" value="Тюткин" autocapitalize="words">
+                   </div>
+                 </div>
+               </div>
+
+               <label for="AddressCompany_2442039941">Company</label>
+               <input type="text" id="AddressCompany_2442039941" class="address_form" name="address[company]" value="" autocapitalize="words">
+
+               <label for="AddressAddress1_2442039941">Address1</label>
+               <input type="text" id="AddressAddress1_2442039941" class="address_form" name="address[address1]" value="Пограничника Гарькавого 40 1 22" autocapitalize="words">
+
+               <label for="AddressAddress2_2442039941">Address2</label>
+               <input type="text" id="AddressAddress2_2442039941" class="address_form" name="address[address2]" value="" autocapitalize="words">
+
+               <label for="AddressCity_2442039941">City</label>
+               <input type="text" id="AddressCity_2442039941" class="address_form" name="address[city]" value="Санкт-Петербург" autocapitalize="words">
+
+               <div class="grid">
+                 <div class="grid-item">
+                   <div class="grid-item-inner">
+                     <label for="AddressCountry_2442039941">Country</label>
+                     <div class="selector-wrapper">
+                       <select id="AddressCountry_2442039941" name="address[country]" data-default="Russia">
+                         <option value="Afghanistan" data-provinces="[]" selected="selected">Afghanistan</option>
+                         <option value="Russia" data-provinces="[[&quot;Altai Krai&quot;,&quot;Altai Krai&quot;],[&quot;Altai Republic&quot;,&quot;Altai Republic&quot;],[&quot;Amur Oblast&quot;,&quot;Amur Oblast&quot;],[&quot;Arkhangelsk Oblast&quot;,&quot;Arkhangelsk Oblast&quot;],[&quot;Astrakhan Oblast&quot;,&quot;Astrakhan Oblast&quot;],[&quot;Belgorod Oblast&quot;,&quot;Belgorod Oblast&quot;],[&quot;Bryansk Oblast&quot;,&quot;Bryansk Oblast&quot;],[&quot;Chechen Republic&quot;,&quot;Chechen Republic&quot;],[&quot;Chelyabinsk Oblast&quot;,&quot;Chelyabinsk Oblast&quot;],[&quot;Chukotka Autonomous Okrug&quot;,&quot;Chukotka Autonomous Okrug&quot;],[&quot;Chuvash Republic&quot;,&quot;Chuvash Republic&quot;],[&quot;Irkutsk Oblast&quot;,&quot;Irkutsk Oblast&quot;],[&quot;Ivanovo Oblast&quot;,&quot;Ivanovo Oblast&quot;],[&quot;Jewish Autonomous Oblast&quot;,&quot;Jewish Autonomous Oblast&quot;],[&quot;Kabardino-Balkarian Republic&quot;,&quot;Kabardino-Balkarian Republic&quot;],[&quot;Kaliningrad Oblast&quot;,&quot;Kaliningrad Oblast&quot;],[&quot;Kaluga Oblast&quot;,&quot;Kaluga Oblast&quot;],[&quot;Kamchatka Krai&quot;,&quot;Kamchatka Krai&quot;],[&quot;Karachay–Cherkess Republic&quot;,&quot;Karachay–Cherkess Republic&quot;],[&quot;Kemerovo Oblast&quot;,&quot;Kemerovo Oblast&quot;],[&quot;Khabarovsk Krai&quot;,&quot;Khabarovsk Krai&quot;],[&quot;Khanty-Mansi Autonomous Okrug&quot;,&quot;Khanty-Mansi Autonomous Okrug&quot;],[&quot;Kirov Oblast&quot;,&quot;Kirov Oblast&quot;],[&quot;Komi Republic&quot;,&quot;Komi Republic&quot;],[&quot;Kostroma Oblast&quot;,&quot;Kostroma Oblast&quot;],[&quot;Krasnodar Krai&quot;,&quot;Krasnodar Krai&quot;],[&quot;Krasnoyarsk Krai&quot;,&quot;Krasnoyarsk Krai&quot;],[&quot;Kurgan Oblast&quot;,&quot;Kurgan Oblast&quot;],[&quot;Kursk Oblast&quot;,&quot;Kursk Oblast&quot;],[&quot;Leningrad Oblast&quot;,&quot;Leningrad Oblast&quot;],[&quot;Lipetsk Oblast&quot;,&quot;Lipetsk Oblast&quot;],[&quot;Magadan Oblast&quot;,&quot;Magadan Oblast&quot;],[&quot;Mari El Republic&quot;,&quot;Mari El Republic&quot;],[&quot;Moscow&quot;,&quot;Moscow&quot;],[&quot;Moscow Oblast&quot;,&quot;Moscow Oblast&quot;],[&quot;Murmansk Oblast&quot;,&quot;Murmansk Oblast&quot;],[&quot;Nizhny Novgorod Oblast&quot;,&quot;Nizhny Novgorod Oblast&quot;],[&quot;Novgorod Oblast&quot;,&quot;Novgorod Oblast&quot;],[&quot;Novosibirsk Oblast&quot;,&quot;Novosibirsk Oblast&quot;],[&quot;Omsk Oblast&quot;,&quot;Omsk Oblast&quot;],[&quot;Orenburg Oblast&quot;,&quot;Orenburg Oblast&quot;],[&quot;Oryol Oblast&quot;,&quot;Oryol Oblast&quot;],[&quot;Penza Oblast&quot;,&quot;Penza Oblast&quot;],[&quot;Perm Krai&quot;,&quot;Perm Krai&quot;],[&quot;Primorsky Krai&quot;,&quot;Primorsky Krai&quot;],[&quot;Pskov Oblast&quot;,&quot;Pskov Oblast&quot;],[&quot;Republic of Adygeya&quot;,&quot;Republic of Adygeya&quot;],[&quot;Republic of Bashkortostan&quot;,&quot;Republic of Bashkortostan&quot;],[&quot;Republic of Buryatia&quot;,&quot;Republic of Buryatia&quot;],[&quot;Republic of Dagestan&quot;,&quot;Republic of Dagestan&quot;],[&quot;Republic of Ingushetia&quot;,&quot;Republic of Ingushetia&quot;],[&quot;Republic of Kalmykia&quot;,&quot;Republic of Kalmykia&quot;],[&quot;Republic of Karelia&quot;,&quot;Republic of Karelia&quot;],[&quot;Republic of Khakassia&quot;,&quot;Republic of Khakassia&quot;],[&quot;Republic of Mordovia&quot;,&quot;Republic of Mordovia&quot;],[&quot;Republic of North Ossetia–Alania&quot;,&quot;Republic of North Ossetia–Alania&quot;],[&quot;Republic of Tatarstan&quot;,&quot;Republic of Tatarstan&quot;],[&quot;Rostov Oblast&quot;,&quot;Rostov Oblast&quot;],[&quot;Ryazan Oblast&quot;,&quot;Ryazan Oblast&quot;],[&quot;Saint Petersburg&quot;,&quot;Saint Petersburg&quot;],[&quot;Sakha Republic (Yakutia)&quot;,&quot;Sakha Republic (Yakutia)&quot;],[&quot;Sakhalin Oblast&quot;,&quot;Sakhalin Oblast&quot;],[&quot;Samara Oblast&quot;,&quot;Samara Oblast&quot;],[&quot;Saratov Oblast&quot;,&quot;Saratov Oblast&quot;],[&quot;Smolensk Oblast&quot;,&quot;Smolensk Oblast&quot;],[&quot;Stavropol Krai&quot;,&quot;Stavropol Krai&quot;],[&quot;Sverdlovsk Oblast&quot;,&quot;Sverdlovsk Oblast&quot;],[&quot;Tambov Oblast&quot;,&quot;Tambov Oblast&quot;],[&quot;Tomsk Oblast&quot;,&quot;Tomsk Oblast&quot;],[&quot;Tula Oblast&quot;,&quot;Tula Oblast&quot;],[&quot;Tver Oblast&quot;,&quot;Tver Oblast&quot;],[&quot;Tyumen Oblast&quot;,&quot;Tyumen Oblast&quot;],[&quot;Tyva Republic&quot;,&quot;Tyva Republic&quot;],[&quot;Udmurtia&quot;,&quot;Udmurtia&quot;],[&quot;Ulyanovsk Oblast&quot;,&quot;Ulyanovsk Oblast&quot;],[&quot;Vladimir Oblast&quot;,&quot;Vladimir Oblast&quot;],[&quot;Volgograd Oblast&quot;,&quot;Volgograd Oblast&quot;],[&quot;Vologda Oblast&quot;,&quot;Vologda Oblast&quot;],[&quot;Voronezh Oblast&quot;,&quot;Voronezh Oblast&quot;],[&quot;Yamalo-Nenets Autonomous Okrug&quot;,&quot;Yamalo-Nenets Autonomous Okrug&quot;],[&quot;Yaroslavl Oblast&quot;,&quot;Yaroslavl Oblast&quot;]]">Russia</option>
+                         <option value="---" data-provinces="[]">---</option>
+                       </select>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="grid-item">
+                   <div class="grid-item-inner">
+                     <div id="AddressProvinceContainer_2442039941">
+                       <label for="AddressProvince_2442039941">Province</label>
+                       <div class="selector-wrapper">
+                         <select id="AddressProvince_2442039941" class="address_form" name="address[province]" data-default="Moscow"></select>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="grid">
+                 <div class="grid-item">
+                   <div class="grid-item-inner">
+                     <label for="AddressZip_2442039941">Postal/Zip Code</label>
+                     <input type="text" id="AddressZip_2442039941" class="address_form" name="address[zip]" value="198259" autocapitalize="characters">
+                   </div>
+                 </div>
+                 <div class="grid-item">
+                   <div class="grid-item-inner">
+                     <label for="AddressPhone_2442039941">Phone</label>
+                     <input type="tel" id="AddressPhone_2442039941" class="address_form" name="address[phone]" value="+79627164140">
+                   </div>
+                 </div>
+               </div>
+
+               <input type="hidden" name="_method" value="put">
+             </form>
+           </div>
+         </div>
+
+         <div class="wrap_btn">
+           <input class="btn" value="Save">
+         </div>
+
+       </div>
+
+     </div>
+     <!-- end Tabs content -->
+   </section>
+
+ </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner-footer">
+      <div class="left">
+        <div class="list-catalogs">
+          <ul>
+            <li>
+              <a href="#">Tattoo Machines</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Tattoo Needles</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Tubes, Tips & Grips</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Tattoo Lnks</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Power Supplies</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Clipcords & Foot Switches</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Accessories</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Medical Supplies</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Stencil products</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Piercing</a>
+              <span class="line">/</span>
+            </li>
+            <li>
+              <a href="#">Aftercare</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#">Shipping</a>
+            </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Privacy policy</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          © 2015 Tattooist. Tattoo Machines.  Design by Great Simple.
+        </div>
+      </div>
+      <div class="right">
+        <h3>Be First</h3>
+        <p>Be the first to find out about new styles and exclusive offers.</p>
+
+        <form action="" class="subscribe">
+          <div class="form-field">
+            <input type="email" placeholder="Email Address"/>
+            <button type="submit"></button>
+          </div>
+        </form>
+
+        <div class="social">
+          <a href="#"><img src="styles/Twitter.svg" alt=""/></a>
+          <a href="#"><img src="styles/Facebook.svg" alt=""/></a>
+          <a href="#"><img src="styles/Youtube.svg" alt=""/></a>
+          <a href="#"><img src="styles/Google.svg" alt=""/></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end Footer -->
+</div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="../bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="../bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="../bower_components/simpler-sidebar/dist/jquery.simpler-sidebar.min.js"></script>
+<script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="styles/api.jquery.js"></script>
+<script src="styles/jquery.fs.stepper.min.js"></script>
+<script src="styles/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -4,6 +4,11 @@
   "dependencies": {
     "jquery": "~1.11.1",
     "imagesloaded": "~3.2.0",
-    "slick-carousel": "~1.5.8"
+    "slick-carousel": "~1.5.9",
+    "perfect-scrollbar": "0.6.7",
+    "masonry": "3.3.2",
+    "simpler-sidebar": "1.4.0",
+    "jquery-ui": "1.11.4",
+    "jquery-sticky": "1.0.3"
   }
 }

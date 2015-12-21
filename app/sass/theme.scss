@@ -1,13 +1,18 @@
+// theme.scss
+
 @import 'compass/reset';
 @import 'compass/css3';
 
-@import 'fonts.scss';
-@import 'base.scss';
-@import 'header.scss';
-@import 'catalog.scss';
-@import 'main_catalog.scss';
-@import 'sidebar.scss';
-@import 'product.scss';
+@import 'fonts';
+@import 'base';
+@import 'header';
+@import 'catalog';
+@import 'main_catalog';
+@import 'sidebar';
+@import 'product';
+@import 'login';
+@import 'search';
+@import 'account';
 
 
 

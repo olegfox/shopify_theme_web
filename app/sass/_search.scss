@@ -1,0 +1,146 @@
+.search-sidebar{
+
+  position: fixed;
+  right: -300px;
+  width: 300px;
+
+  .sidebar-wrapper{
+
+    .form-search{
+
+      height: 111px;
+      font-family: FuturaPT-Medium;
+      font-size: 24px;
+      color: #202020;
+      border-bottom: #e8e8e8 solid 1px;
+      background-color: #f6f6f6;
+      text-align: center;
+
+      form{
+
+        button[type="submit"]{
+
+          position: absolute;
+          top: 48px;
+          right: 21px;
+          cursor: pointer;
+          border: 0;
+          background: none;
+
+          .icon{
+
+            &.icon-search{
+
+              display: inline-block;
+              width: 19px;
+              height: 18px;
+              background: url("./Search.svg") 0 0 no-repeat;
+
+            }
+
+          }
+
+        }
+
+        input[type="text"]{
+
+          display: inline-block;
+          font-family: FuturaPT-Medium;
+          font-size: 24px;
+          color: #A8A8A8;
+          line-height: 31px;
+          text-align: left;
+          height: 31px;
+          border: 0;
+          margin: 41px 0 0 25px;
+          background: none;
+          float: left;
+
+          &::-webkit-search-decoration,
+          &::-webkit-search-cancel-button,
+          &::-webkit-search-results-button,
+          &::-webkit-search-results-decoration {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .results{
+
+      ul{
+
+        li{
+
+          position: relative;
+          font-size: 0;
+          padding: 0 0 25px 0;
+
+          hr{
+
+            border: 0;
+            background: #e8e8e8;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 20px;
+
+          }
+
+          .image{
+
+            display: inline-block;
+            width: 38%;
+
+            a{
+
+              display: inline-block;
+              margin-top: 18px;
+              margin-left: 20px;
+
+              img{
+                width: 100%;
+              }
+
+            }
+
+          }
+
+          .description{
+
+            display: inline-block;
+            vertical-align: top;
+            width: 62%;
+
+            a.title{
+
+              font-family: FuturaPT-Book;
+              font-size: 15px;
+              color: #7C7C7C;
+              line-height: 20px;
+              text-align: left;
+              display: inline-block;
+              margin-top: 23px;
+              padding-left: 7px;
+              padding-right: 19px;
+
+            }
+
+            .price{
+
+              font-family: FuturaPT-Medium;
+              font-size: 13px;
+              color: #202020;
+              line-height: 20px;
+              text-align: left;
+              margin-top: 3px;
+              margin-left: 6px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
