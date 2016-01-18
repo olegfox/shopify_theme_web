@@ -1,5 +1,35 @@
 $(function(){
   /**
+   * detect IE
+   * returns version of IE or false, if browser is not Internet Explorer
+   */
+  function detectIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+      // IE 10 or older => return version number
+      return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+      // IE 11 => return version number
+      var rv = ua.indexOf('rv:');
+      return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+      // Edge (IE 12+) => return version number
+      return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+
+    // other browser
+    return false;
+  }
+
+  /**
    * Cлайдер с товарами на главной
    */
   $('.carousel ul').slick({
@@ -126,10 +156,13 @@ $(function(){
     /**
      * Параллакс
      */
-    if($("body > .content").scrollTop() <= 400){
-      $('header .vertical-center .inner, header .header-footer').css({
-        'transform' : 'translateY(' + $(".content").scrollTop()/2 + 'px)'
-      });
+    // Если это не IE
+    if(!detectIE()){
+      if($("body > .content").scrollTop() <= 400){
+        $('header .vertical-center .inner, header .header-footer').css({
+          'transform' : 'translateY(' + $(".content").scrollTop()/2 + 'px)'
+        });
+      }
     }
   };
   $("body > .content").bind('scroll.main', eventScroll);
@@ -245,13 +278,14 @@ $(function(){
 
   $('.product-images ul').slick({
     centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 1,
+    centerPadding: '0px',
+    slidesToShow: 3,
     sliderPerRow: 1,
     swipeToSlide: true,
     arrows: true,
     infinite: true,
-    autoplay: false
+    autoplay: false,
+    variableWidth: true
   });
 
   /**
@@ -273,20 +307,20 @@ $(function(){
 
   // Вычисляем высоту слайдера с изображениями продукта
   var calculateProductBlock = function() {
-    var heightBlock = $(window).height() -
-                      $(".wrap-header-bar").outerHeight() -
-                      $(".product .wrap-head").outerHeight() -
-                      $(".product .wrap-shop-bar").outerHeight() - parseInt($(".product .product-images").css("padding-top"));
-
+    //var heightBlock = $(window).height() -
+    //                  $(".wrap-header-bar").outerHeight() -
+    //                  $(".product .wrap-head").innerHeight() -
+    //                  $(".product .wrap-shop-bar").outerHeight() - parseInt($(".product .product-images").css("padding-top"));
+    //
     //console.log(".window" + $(window).height());
     //console.log(".wrap-header-bar" + $(".wrap-header-bar").outerHeight());
     //console.log(".product .wrap-head" + $(".product .wrap-head").outerHeight());
     //console.log(".product .social-bar" + $(".product .social-bar").outerHeight());
     //console.log(".product .wrap-shop-bar" + $(".product .wrap-shop-bar").outerHeight());
-
-    $(".product .product-images").css({
-      height: heightBlock
-    });
+    //
+    //$(".product .product-images").css({
+    //  height: heightBlock
+    //});
 
     //if(window.innerWidth < 1440) {
     //  $('.product-images ul li img').css({
@@ -299,12 +333,33 @@ $(function(){
     //  });
     //} else {
 
-      $('.product-images ul li img').css({
-        'max-height': heightBlock,
-        'width': 'auto'
-      });
-
       $('.product-images ul').imagesLoaded(function(){
+        var heightBlock = $(window).height() -
+          $(".wrap-header-bar").outerHeight() -
+          $(".product .wrap-head").innerHeight() -
+          $(".product .wrap-shop-bar").outerHeight() - parseInt($(".product .product-images").css("padding-top"));
+
+        $(".product .product-images").css({
+          height: heightBlock
+        });
+
+        $('.product-images ul li img').each(function(i, e){
+
+          if($(e).parent().width() >= $(e).width()) {
+            $(e).css({
+              'max-height': 'inherit',
+              'width': '100%'
+            });
+          }
+
+          if($(e).height() > heightBlock) {
+            $(e).css({
+              'max-height': heightBlock,
+              'width': 'auto'
+            });
+          }
+        });
+
         $('.product-images ul').css({
           'top': 0,
           'padding-top': ($('.product-images').height() - $('.product-images ul').height())/2
@@ -324,6 +379,20 @@ $(function(){
     calculateProductBlock();
 
   });
+
+  /**
+   * Выравнивание сетки товаров на странице коллекции
+   */
+  //if($('.items-catalog').length > 0) {
+  //  var countSize60 = $('.size-60').length;
+  //
+  //  // Если в сетке товаров есть большие карточки товара
+  //  if(countSize60 > 0) {
+  //
+  //    //Скрываем карточки с размером size-20
+  //
+  //  }
+  //}
 
   /**
    * Ajax подгрузка товаров
@@ -383,6 +452,7 @@ $(function(){
    */
   var time = 500,
       closeSignIn = function () {
+
         $('[href="/account/login/"]').removeClass('current');
         $('.wrap-login').removeClass('visible');
 
@@ -397,6 +467,13 @@ $(function(){
           opacity: '0'
         }, 1000, function(){
           $('body > .content').find('.black-background').remove();
+
+          // Если IE
+          if(detectIE()) {
+            $('.wrap-header-bar').css({
+              'position': 'fixed'
+            });
+          }
         });
       };
 
@@ -406,6 +483,14 @@ $(function(){
       closeSignIn();
     } else {
       $(this).addClass('current');
+
+      // Если IE
+      if(detectIE()) {
+        $('.wrap-header-bar').css({
+          'position': 'absolute'
+        });
+      }
+
       $('.wrap-login').addClass('visible');
 
       $('body > .content').addClass("mTop");
@@ -579,6 +664,9 @@ $(function(){
   if($('#RecoverPasswordForm').length > 0){
     var $form = $('#RecoverPasswordForm form');
 
+    //Отключение html5 валидации
+    $form.attr('novalidate', 'novalidate');
+
     $form.unbind('submit').bind('submit', function(){
 
       // Валидация email
@@ -587,7 +675,7 @@ $(function(){
         return re.test(email);
       }
 
-      if(validateEmail($('#RecoverPasswordForm input[type="email"]'))){
+      if(!validateEmail($('#RecoverPasswordForm input[type="email"]').val())){
         $('#RecoverPasswordForm input[type="email"]').addClass('error');
       } else {
         $('#RecoverPasswordForm input[type="email"]').removeClass('error');

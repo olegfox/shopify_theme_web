@@ -6,9 +6,11 @@ section.product{
   padding: 111px 60px 81px 60px;
   background-color: #fff;
   .wrap-head{
+    position: relative;
     background: #f4f4f4;
     margin: 0 -60px;
     padding-top: 26px;
+    z-index: 100;
     .breadcrumbs{
       ul{
         li{
@@ -34,9 +36,9 @@ section.product{
 
 // Product images
   .product-images{
-    padding-top: 0px;
-    margin-left: -60px;
-    margin-right: -60px;
+    padding-top: 0;
+    margin-left: -25%;
+    margin-right: -25%;
     background: #f4f4f4;
     height: 1200px;
     img{
@@ -55,12 +57,14 @@ section.product{
       text-align: center;
       a{
         display: inline-block;
+        width: 100%;
       }
       &.slick-center{
         opacity: 1;
       }
       img{
         width: 100%;
+        margin: 0 auto;
       }
     }
     .slick-prev,
@@ -88,10 +92,12 @@ section.product{
 
 // Social-bar
   .social-bar{
+    position: relative;
     line-height: 30px;
     margin: 0 -60px;
     background: #f4f4f4;
     padding: 1px 0 10px 0;
+    z-index: 100;
     .label{
       display: inline-block;
       font-family:FuturaPT-Medium;
@@ -146,7 +152,7 @@ section.product{
     background-color: #fff;
     left: 0;
     bottom: 0;
-    z-index: 10;
+    z-index: 101;
     .shop-bar{
       padding-top: 29px;
       form{
@@ -377,15 +383,22 @@ section.product{
 }
 
 @media screen and (max-width: 1440px) {
-  section.product{
-    .product-images{
-      padding-top: 0px;
-    }
-    .wrap-head {
-      padding-top: 26px;
-      h2{
-        max-width: 900px;
+  // Shop-bar
+  .wrap-shop-bar{
+    .shop-bar{
+      form{
+        .selector-wrapper{
+          label{
+          }
+          &:before{
+            background: none;
+          }
+          &:after{
+            display: none;
+          }
+        }
       }
     }
   }
+  // end Shop-bar
 }

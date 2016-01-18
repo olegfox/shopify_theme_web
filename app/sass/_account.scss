@@ -704,3 +704,21 @@ section.account {
   }
 
 }
+
+// IE 10 - 11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  // Filters
+  .filters{
+    .list-filters{
+      .wrap-selec{
+        &:after{
+          background: none;
+        }
+      }
+      #sort-by{
+        background: none;
+      }
+    }
+  }
+  // end Filters
+}

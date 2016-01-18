@@ -127,6 +127,7 @@ button{
 
   min-height: 100%;
   background: #fff;
+  overflow-x: hidden;
 
   section {
 
@@ -613,12 +614,12 @@ select{
       border-bottom: solid 1px #e8e8e8;
       .grid-item {
         .logo {
-          color: #7C7C7C;
+          color: #000;
         }
         ul{
           li{
             a:hover{
-              color: #7C7C7C;
+              color: #000;
             }
           }
         }
@@ -753,3 +754,15 @@ footer{
   z-index: 20;
 }
 // end Ps-scrollbar
+
+// IE 10 - 11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  // Filters
+  section.product .wrap-shop-bar .shop-bar form .selector-wrapper:before{
+    background: none;
+  }
+  section.product .wrap-shop-bar .shop-bar form .selector-wrapper:after{
+    display: none;
+  }
+  // end Filters
+}
