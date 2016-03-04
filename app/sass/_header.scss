@@ -24,7 +24,9 @@ header {
       display: table-cell;
       vertical-align: middle;
       h1{
-        margin-bottom: 75px;
+        margin-bottom: 48px;
+        margin-top: 17px;
+        letter-spacing: -2px;
       }
       .list-catalogs{
         padding: 0 60px;
@@ -42,12 +44,12 @@ header {
               }
             }
             span.line{
-              font-family:FuturaPT-Bold;
-              font-size:30px;
-              color:#B68B3E;
-              line-height:46px;
-              text-align:left;
-              padding: 0 10px;
+              font-family: FuturaPT-Bold;
+              font-size: 30px;
+              color: #B68B3E;
+              line-height: 46px;
+              text-align: left;
+              letter-spacing: -1px;
             }
           }
         }
@@ -57,11 +59,10 @@ header {
 
   a.icon-arrow{
     position: fixed;
-    background: url(Bottom_Arrow.svg) 0 0 no-repeat;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    bottom: 49px;
+    background: url('icon_s.svg') 0 0 no-repeat;
+    width: 52px;
+    height: 52px;
+    bottom: 48px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -75,25 +76,51 @@ header {
     bottom: 44px;
     .pull-left{
       float: left;
-      opacity:0.3;
-      font-family:FuturaPT-Book;
-      font-size:15px;
-      color:#FFFFFF;
-      line-height:20px;
-      text-align:left;
+      opacity: .3;
+      font-family: FuturaPT-Book;
+      font-size: 15px;
+      color: #FFF;
+      line-height: 25px;
+      text-align: left;
     }
     .pull-right{
       float: right;
       a{
         display: inline-block;
-        padding: 0 11px;
+        margin: 0 11px;
         opacity: 0.8;
         @include transition(opacity 200ms ease-out);
-        &:hover{
-          opacity: 1;
-        }
-        img{
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        .social {
+          margin-bottom: -4px;
+          &.twitter {
+            width: 18px;
+            height: 18px;
+            background: url('icon_s.svg') 0 -297px no-repeat;
+          }
+          &.facebook {
+            width: 9px;
+            height: 20px;
+            background: url('icon_s.svg') 0 -71px no-repeat;
+          }
+          &.youtube {
+            width: 22px;
+            height: 18px;
+            background: url('icon_s.svg') 0 -314px no-repeat;
+          }
+          &.google_plus {
+            width: 19px;
+            height: 18px;
+            background: url('icon_s.svg') 0 -91px no-repeat;
+          }
+          &:hover{
+            opacity: 1;
+          }
+          img{
 
+          }
         }
       }
     }

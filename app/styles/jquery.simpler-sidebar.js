@@ -49,6 +49,8 @@
                      */
                     $sidebar.find('.form-search input[type="search"]').focus();
 
+                    $('.search-sidebar .sidebar-wrapper .results').perfectScrollbar()
+
                     $mask.fadeIn(duration);
                 },
                 animateClose = function() {

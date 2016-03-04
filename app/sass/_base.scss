@@ -82,10 +82,10 @@ h1{
 
 h2{
   font-family:FuturaPT-Medium;
-  font-size:50px;
-  color:#202020;
-  line-height:82px;
-  text-align:center;
+  font-size: 55px;
+  color: #202020;
+  line-height: 82px;
+  text-align: center;
 }
 
 p{
@@ -111,6 +111,9 @@ h3{
 a{
   text-decoration: none;
   @include transition(color 0.1s ease-in-out);
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   &:focus{
     outline: 0;
   }
@@ -215,6 +218,9 @@ select{
   background: #fff;
   cursor: pointer;
   @include transition(background-color 200ms ease-out);
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   &:hover{
     color: #fff;
     background-color: #BC8420!important;
@@ -253,27 +259,14 @@ select{
 // Breadcrumbs
 .breadcrumbs{
   ul{
-    li{
+    li, *{
       display: inline-block;
-      font-family:FuturaPT-Medium;
-      font-size:17px;
-      color:#A8A8A8;
-      line-height:38px;
-      text-align:center;
-      a{
-        font-family:FuturaPT-Medium;
-        font-size:17px;
-        color:#A8A8A8;
-        line-height:38px;
-        text-align:center;
-      }
-      span.line{
-        font-family:FuturaPT-Medium;
-        font-size:17px;
-        color:#A8A8A8;
-        line-height:38px;
-        text-align:center;
-      }
+      font-family: FuturaPT-Medium;
+      font-size: 13px;
+      color: #A8A8A8;
+      line-height: 38px;
+      text-align: center;
+      text-transform: uppercase;
     }
   }
 }
@@ -312,12 +305,12 @@ select{
 // Filters
 .filters{
   text-align: left;
-  padding: 25px 0px;
-  margin-top: -30px;
+  padding: 29px 0;
+  margin-top: -40px;
   margin-bottom: 25px;
   border-bottom: solid 1px #F0F0F0;
   label{
-    padding-right: 15px;
+    padding-right: 13px;
   }
   .little-text{
     display: inline-block;
@@ -326,6 +319,7 @@ select{
   .list-filters{
     float: right;
     margin-top: -5px;
+    padding-right: 7px;
     .wrap-selec{
       position: relative;
       display: inline-block;
@@ -336,7 +330,7 @@ select{
         height: 5px;
         top: 15px;
         right: 11px;
-        background: #fff url(Dropdown_Arrow.svg) 0 0 no-repeat;
+        background: url('icon_s.svg') 0 -66px no-repeat;
       }
     }
     #sort-by{
@@ -350,7 +344,7 @@ select{
       color:#7C7C7C;
       line-height:18px;
       cursor: pointer;
-      padding-left: 5px;
+      padding-left: 10px;
       -webkit-appearance:none;
       -moz-appearance:none;
       appearance:none;
@@ -364,9 +358,24 @@ select{
 
 // Header bar
 .wrap-header-bar{
-  position: fixed;
+  position: absolute;
+  top: -111px;
+  margin-top: 111px;
   width: 100%;
   z-index: 101;
+  @include transition(top 200ms ease-out);
+  -moz-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  &.wrap-header-bar-fixed {
+    position: fixed;
+    top: 0px;
+    margin-top: 0px;
+    @include transition(top 200ms ease-out);
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
   .header-bar {
     font-size: 0;
     padding: 30px 60px 27px 60px;
@@ -383,7 +392,7 @@ select{
       }
       &.grid-item-3{
         text-align: right;
-        width: 42.5%;s
+        width: 42.5%;
         .wrap{
           display: inline-block;
           text-align: right;
@@ -405,12 +414,15 @@ select{
         cursor: pointer;
         margin-top: 5px;
         @include transition(background-color 200ms ease-out);
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
         span.text{
           display: inline-block;
           font-family:FuturaPT-Medium;
           font-size:17px;
           color:#BC8420;
-          margin-top: 11px;
+          margin-top: 12px;
           margin-left: 15px;
           vertical-align: top;
         }
@@ -426,14 +438,14 @@ select{
         .lines {
           display: inline-block;
           margin-left: 20px;
-          margin-top: 14px;
+          margin-top: 15px;
           vertical-align: top;
           span.line {
             display: block;
             background-color: #BC8420;
             width: 21px;
             height: 2px;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
           }
         }
         &:hover{
@@ -481,12 +493,13 @@ select{
       // Logo
       .logo{
         display: inline-block;
-        font-family:FuturaPT-Bold;
-        font-size:41px;
-        color:#FFFFFF;
-        line-height:55px;
-        text-align:center;
+        font-family: FuturaPT-Bold;
+        font-size: 40px;
+        color: #FFF;
+        line-height: 55px;
+        text-align: center;
         margin-top: -2px;
+        letter-spacing: -2px;
       }
       // end Logo
 
@@ -513,10 +526,10 @@ select{
 
       .search{
         display: inline-block;
-        margin-top: 17px;
+        margin-top: 18px;
         vertical-align: top;
         .icon-search{
-          background: url(./Search.svg) 0 0 no-repeat;
+          background: url('icon_s.svg') 0 -260px no-repeat;
           width: 19px;
           height: 18px;
           cursor: pointer;
@@ -534,26 +547,32 @@ select{
         margin-top: 5px;
         cursor: pointer;
         @include transition(background-color 200ms ease-out);
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
         span.text{
-          font-family:FuturaPT-Medium;
-          font-size:17px;
-          color:#BC8420;
-          line-height:22px;
+          font-family: FuturaPT-Medium;
+          font-size: 17px;
+          color: #BC8420;
+          line-height: 22px;
+          margin-top: 9px;
           margin-left: 24px;
+          display: inline-block;
         }
         span.number{
+          font-family: FuturaPT-Light;
           display: inline-block;
-          font-size:15px;
-          color:#FFFFFF;
+          font-size: 15px;
+          color: #FFF;
           text-align: center;
-          line-height:18px;
-          background:#BC8420;
-          width:27px;
-          height:27px;
+          background: #BC8420;
+          width: 27px;
+          height: 27px;
           margin-top: 7px;
-          margin-left: 10px;
-          line-height: 27px;
-          border-radius:100%;
+          margin-left: 14px;
+          line-height: 28px;
+          border-radius: 100%;
+          vertical-align: top;
         }
         &:hover{
           background-color: #BC8420;
@@ -570,7 +589,9 @@ select{
     }
     //White-theme
     &.header-bar-white{
-      @include transition(background-color 200ms ease-out);
+      -moz-transform: translate3d(0,0,0);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
       .grid-item{
         ul{
           li{
@@ -635,11 +656,13 @@ footer{
   position: relative;
   background-color: #fff;
   border-top: solid 1px #E8E8E8;
-  padding: 81px 188px 97px 188px;
+  padding: 81px 145px 97px 145px;
   margin-top: -555px;
   z-index: 1;
   .inner-footer{
     font-size: 0;
+    max-width: 1150px;
+    margin: 0 auto;
     .left{
       display: inline-block;
       width: 74%;
@@ -730,7 +753,7 @@ footer{
           }
           button[type='submit']{
             float: right;
-            background: url(./Subscribe_Button.svg) 0 0 no-repeat;
+            background: url('icon_s.svg') 0 -279px no-repeat;
             width: 18px;
             height: 19px;
             border: 0;
@@ -741,7 +764,28 @@ footer{
       .social{
         margin: 40px -11px 0 -11px;
         a{
-          padding: 0 11px;
+          display: inline-block;
+          margin: 0 11px;
+          &.twitter {
+            width: 18px;
+            height: 18px;
+            background: url('icon_s.svg') 0 -297px no-repeat;
+          }
+          &.facebook {
+            width: 9px;
+            height: 20px;
+            background: url('icon_s.svg') 0 -71px no-repeat;
+          }
+          &.youtube {
+            width: 22px;
+            height: 18px;
+            background: url('icon_s.svg') 0 -314px no-repeat;
+          }
+          &.google_plus {
+            width: 19px;
+            height: 18px;
+            background: url('icon_s.svg') 0 -91px no-repeat;
+          }
         }
       }
     }

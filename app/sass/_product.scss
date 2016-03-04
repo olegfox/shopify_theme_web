@@ -6,11 +6,13 @@ section.product{
   padding: 111px 60px 81px 60px;
   background-color: #fff;
   .wrap-head{
-    position: relative;
-    background: #f4f4f4;
+    position: absolute;
+    background: none;
     margin: 0 -60px;
-    padding-top: 26px;
-    z-index: 100;
+    padding-top: 86px;
+    padding-left: 211px;
+    text-align: left;
+    z-index: 1000;
     .breadcrumbs{
       ul{
         li{
@@ -25,12 +27,22 @@ section.product{
     h2{
       display: inline-block;
       font-family: FuturaPT-Medium;
-      font-size: 50px;
-      color: #202020;
-      line-height: 61px;
-      text-align: center;
-      margin-top: 0px;
-      max-width: 500px;
+      font-size: 42px;
+      color: #0f0f0f;
+      line-height: 51px;
+      text-align: left;
+      margin-top: 13px;
+      max-width: 383px;
+    }
+
+    .price {
+      font-family:FuturaPT-Book;
+      font-size:23px;
+      color:#1b1b1b;
+      line-height:30px;
+      text-align:left;
+      margin-top: 14px;
+      margin-left: 4px;
     }
   }
 
@@ -46,6 +58,13 @@ section.product{
     }
     ul{
       li{
+        @include transition(opacity 0.1s ease-in-out);
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        &.hide {
+          opacity: 0!important;
+        }
         a{
 
         }
@@ -114,6 +133,9 @@ section.product{
         margin: 0 29px 0 0;
         opacity: 0.5;
         @include transition(opacity 200ms ease-out);
+        -moz-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
         &:hover{
           opacity: 1;
         }
@@ -181,7 +203,7 @@ section.product{
             bottom: 0;
             right: 21px;
             margin: auto 0;
-            background: #fff url(Dropdown_Arrow.svg) 0 0 no-repeat;
+            background: url('icon_s.svg') 0 -66px no-repeat;
           }
           &:after{
             position: absolute;
@@ -240,6 +262,9 @@ section.product{
             width:60px;
             height:54px;
             padding-left: 15px;
+            &:-webkit-autofill {
+              background: none;
+            }
           }
         }
         .wrap-button{
@@ -254,6 +279,9 @@ section.product{
           cursor: pointer;
           text-align: left;
           @include transition(background-color 200ms ease-out);
+          -moz-transform: translate3d(0,0,0);
+          -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
           &:hover{
             background:#B68B3E;
             .price{
@@ -295,12 +323,14 @@ section.product{
   }
 // end Shop-bar
 
-// Product info
+  // Product info
   .wrap-product-info{
     margin-top: 62px;
     padding: 0 73px;
     .product-info{
       font-size: 0;
+      max-width: 1122px;
+      margin: 0 auto;
       h3{
         font-family:FuturaPT-Medium;
         font-size:13px;
@@ -314,6 +344,10 @@ section.product{
         display: inline-block;
         width: 65%;
         vertical-align: top;
+        display: none;
+        .inner-text{
+          padding-right: 65px;
+        }
       }
       p{
         font-family:FuturaPT-Light;
@@ -327,7 +361,7 @@ section.product{
         width: 35%;
         vertical-align: top;
         .details{
-          padding-left: 95px;
+          padding-left: 36px;
           ul{
             display: table;
             margin-top: 30px;
@@ -341,6 +375,7 @@ section.product{
                 line-height:20px;
                 padding-right: 42px;
                 padding-bottom: 19px;
+                text-align: left;
               }
               .value{
                 display: table-cell;
@@ -355,8 +390,11 @@ section.product{
         }
       }
       .options{
-        margin-top: 46px;
-        padding-left: 95px;
+        margin-top: 45px;
+        padding-left: 34px;
+        h3{
+          margin-bottom: 25px;
+        }
         ul{
           margin-top: 25px;
           text-align: left;
@@ -366,20 +404,16 @@ section.product{
             font-size:15px;
             color:#7C7C7C;
             line-height:20px;
-            padding-left: 23px;
             padding-bottom: 13px;
-            &:after{
-              position: absolute;
-              background:#A8A8A8;
-              width:13px;
-              height:1px;
+            span{
+              margin-right: 11px;
             }
           }
         }
       }
     }
   }
-// end Product info
+  // end Product info
 }
 
 @media screen and (max-width: 1440px) {

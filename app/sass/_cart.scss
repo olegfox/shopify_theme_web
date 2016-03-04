@@ -1,0 +1,356 @@
+// _cart.scss
+
+.template-cart {
+
+  .wrap-header-bar {
+
+    .header-bar {
+
+      .grid-item {
+
+        &.grid-item-1 {
+
+          display: none;
+
+        }
+
+        &.grid-item-2 {
+
+          width: 100%;
+
+        }
+
+        &.grid-item-3 {
+
+          display: none;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  footer {
+
+    display: none;
+
+  }
+
+  section.catalog {
+
+    padding-top: 128px;
+    padding-bottom: 49px!important;
+
+  }
+
+  .null-cart {
+
+    &-hide {
+
+      display: none;
+
+    }
+
+  }
+
+  .paypal-button {
+
+    display: inline-block;
+    background: url(paypal-button.png) no-repeat;
+    width: 236px;
+    height: 45px;
+    margin: 24px 0 0 0;
+
+  }
+
+  .word-line {
+
+    font-family:FuturaPT-Light;
+    color: #838383;
+    text-align: center;
+    padding: 16px 0 0 0;
+
+  }
+
+  .section-header {
+
+    &__title {
+
+      font-size: 61px;
+      color: #202020;
+      line-height: 82px;
+      text-align: center;
+
+    }
+
+  }
+
+  form.cart {
+
+    table {
+
+      width: 100%;
+      margin: 120px auto 0 auto;
+      max-width: 1170px;
+
+      thead {
+
+        tr {
+
+          th {
+
+            font-family:FuturaPT-Medium;
+            font-size: 14px;
+            color: #202020;
+            padding: 24px 0px;
+            text-transform: uppercase;
+
+          }
+
+          border-top: #E8E8E8 solid 1px;
+          border-bottom: #E8E8E8 solid 1px;
+
+        }
+
+      }
+
+      tbody {
+
+        tr {
+
+          border-top: #E8E8E8 solid 1px;
+          border-bottom: #E8E8E8 solid 1px;
+
+          td {
+
+            &.img {
+
+              text-align: center;
+              padding: 6px;
+              width: 18%;
+
+            }
+
+            &.title {
+
+              width: 30%;
+
+              a {
+
+                color: #808080;
+                font-family: FuturaPT-Book;
+                font-size: 15px;
+                line-height: 20px;
+
+              }
+
+            }
+
+            &.price {
+
+              font-family: FuturaPT-Medium;
+              font-size: 13px;
+              color: #202020;
+              width: 18%;
+
+            }
+
+            &.remove {
+
+              text-align: right;
+              padding-right: 15px;
+
+            }
+
+            .buttons{
+
+              position: relative;
+              display: inline-block;
+              border-radius: 4px;
+              height: 24px;
+              font-size: 0;
+              line-height: 24px;
+
+              .quantity {
+
+                display: inline-block;
+                font-family: FuturaPT-Book;
+                font-size: 13px;
+                color: #878787;
+                vertical-align: top;
+                width: 37px;
+                text-align: center;
+
+              }
+
+              .button{
+
+                position: relative;
+                display: inline-block;
+                width: 24px;
+                border: 0;
+                height: 24px;
+                cursor: pointer;
+                background: #F4F4F4;
+                border-radius: 4px;
+
+                &:hover{
+
+                  background: #EAE8E8;
+
+                }
+
+                span{
+
+                  &.line{
+
+                    position: absolute;
+                    background: #7C7C7C;
+                    width: 10px;
+                    height: 2px;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+
+                  }
+
+                  &.vertical-line{
+
+                    position: absolute;
+                    background: #7C7C7C;
+                    width: 2px;
+                    height: 10px;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+
+                  }
+                }
+              }
+
+              & > .line{
+
+                position: absolute;
+                opacity:0.08;
+                background:#252525;
+                width:2px;
+                height:22px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+
+              }
+            }
+
+            .btn-remove {
+
+              font-family: FuturaPT-Book;
+              font-size: 15px;
+              line-height: 16px;
+              color: #D4653D;
+              border: 0;
+              padding-right: 14px;
+
+              span {
+
+                display: inline-block;
+                font-family: FuturaPT-Book;
+                font-weight: 600;
+                @include transform (rotate(-45deg));
+                padding: 0px 6px;
+                font-size: 20px;
+                vertical-align: top;
+
+              }
+
+            }
+
+            .pull-left {
+
+              font-family: FuturaPT-Book;
+              float: left;
+              padding-left: 5px;
+
+            }
+
+            .pull-right {
+
+              font-family: FuturaPT-Book;
+              float: right;
+              padding-right: 15px;
+
+            }
+
+          }
+
+          &.total {
+
+            td {
+
+              padding: 24px 0;
+              vertical-align: middle;
+
+              .pull-left {
+
+                .head {
+
+                  text-transform: uppercase;
+
+                }
+
+                p {
+
+                  margin-top: 5px;
+
+                }
+
+              }
+
+              .pull-right {
+
+                display: inline-block;
+                font-size: 26px;
+                vertical-align: middle;
+                margin-top: 8px;
+
+              }
+
+            }
+
+          }
+
+          &.subtotal {
+
+            td {
+
+              padding: 24px 0;
+              vertical-align: middle;
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .btn.checkout {
+
+      font-size: 20px;
+      width: 255px;
+      height: 60px;
+      margin-top: 49px;
+
+    }
+
+  }
+
+}

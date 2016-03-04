@@ -12,9 +12,9 @@
 	.stepper .stepper-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 
 	.stepper .stepper-input:focus { background-color: #fff; }
-	.stepper .stepper-arrow { background: #eee url(jquery.fs.stepper-arrows.png) no-repeat; cursor: pointer; display: block; height: 50%; position: absolute; right: 0; text-indent: -99999px; width: 30px; z-index: 50; }
-	.stepper .stepper-arrow.up { background-position: center top; border-bottom: none; top: 0; }
-	.stepper .stepper-arrow.down { background-position: center bottom; bottom: 0; }
+	.stepper .stepper-arrow { background: #eee url(jquery.fs.stepper-arrows.svg) no-repeat; cursor: pointer; display: block; height: 50%; position: absolute; right: 0; text-indent: -99999px; width: 30px; z-index: 50; }
+	.stepper .stepper-arrow.up { background-position: -48px top; border-bottom: none; top: 0; }
+	.stepper .stepper-arrow.down { background-position: -48px bottom; bottom: 0; }
 
 	@media screen and (min-width: 740px) {
 		.stepper:hover .stepper-input { background-color: #fff; }

@@ -84,7 +84,7 @@ Shopify.onItemAdded = function(line_item) {
       .removeClass('cart-tempate')
       .attr('id', 'cart-product' + line_item.id)
       .find('.image img')
-      .attr('src', line_item.image) // Image in cart product
+      .attr('src', line_item.image.replace('_Head.', '_Head_small.').replace('_head.', '_head_small.').replace('__head.', '__head_small.').replace('__Head.', '__Head_small.')) // Image in cart product
       .end()
       .find('.title').html(line_item.title) // Title product
       .end()
@@ -104,6 +104,7 @@ Shopify.onItemAdded = function(line_item) {
  * Изменение количества товара в корзине
  */
 Shopify.quantityChange = function() {
+  // Сайдбар
   $('.sidebar-wrapper .cart-list ul li .description .form_quantity .buttons button').each(function(i, e){
     if($(e).hasClass('plus')){
       $(e).click(function(){
@@ -134,20 +135,51 @@ Shopify.quantityChange = function() {
       });
     }
   });
+  // Страница товара
+  $('.template-cart form.cart table tbody tr td .buttons .button').each(function(i, e){
+    event.preventDefault();
+    if($(e).hasClass('plus')){
+      $(e).unbind('click').bind('click', function(){
+        var quantity = parseInt($(this).parent().find('.quantity').text()) + 1,
+          variantId = $(this).parent().parent().parent().find('#variant_id').val();
+
+        if(quantity <= 0){
+          quantity = 1;
+        }
+
+        $(this).parent().find('.quantity').text(quantity);
+
+        Shopify.changeItem(variantId, quantity);
+      });
+    }
+    if($(e).hasClass('minus')){
+      $(e).unbind('click').bind('click', function(){
+        var quantity = parseInt($(this).parent().find('.quantity').text()) - 1,
+          variantId = $(this).parent().parent().parent().find('#variant_id').val();
+
+
+        if(quantity <= 0){
+          quantity = 1;
+        }
+
+        $(this).parent().find('.quantity').text(quantity);
+        Shopify.changeItem(variantId, quantity);
+      });
+    }
+  });
 };
 
 /**
  * Удаление товара их корзины
  */
 Shopify.removeProduct = function() {
-  $('.sidebar-wrapper .cart-list ul li .description .form_quantity .remove').each(function(i, e){
+  // Сайдбар и страница корзины
+  $('.sidebar-wrapper .cart-list ul li .description .form_quantity .remove, .template-cart form.cart table tbody tr td .btn-remove').each(function(i, e){
     $(e).click(function(event){
       event.preventDefault();
       var that = this;
       var variantId = $(this).parent().find('#variant_id').val();
-      Shopify.removeItem(variantId, function(){
-        $(that).parent().parent().parent().remove();
-      });
+      Shopify.removeItem(variantId);
     });
   });
 };
@@ -163,7 +195,7 @@ Examples of call:
 Shopify.formatMoney(600000, '€{{amount_with_comma_separator}} EUR')
 Shopify.formatMoney(600000, '€{{amount}} EUR')
 Shopify.formatMoney(600000, '${{amount_no_decimals}}')
-Shopify.formatMoney(600000, '{{ shop.money_format }}') in a Liquid template!
+Shopify.formatMoney(600000, '{{ shop.money_format }}/cart/change.js') in a Liquid template!
 
 In a Liquid template, you have access to a shop money formats with:
 {{ shop.money_format }}
@@ -368,13 +400,19 @@ Shopify.changeItem = function(variant_id, quantity, callback) {
 // POST to cart/change.js returns the cart in JSON.
 // ---------------------------------------------------------
 Shopify.removeItem = function(variant_id, callback) {
+  $('#page-cart-product' + variant_id).remove();
+  $('#cart-product' + variant_id).remove();
+
   var params = {
     type: 'POST',
     url: '/cart/change.js',
     data:  'quantity=0&id='+variant_id,
     dataType: 'json',
     success: function(cart) {
-      callback(cart);
+      if(callback instanceof Function) {
+        callback(cart);
+      }
+
       Shopify.onCartUpdate(cart);
     },
     error: function(XMLHttpRequest, textStatus) {
@@ -573,6 +611,12 @@ if (jQuery.fn.jquery >= '1.4') {
   // ---------------------------------------------------------
 
   Shopify.quantityUpdate = function( cart ) {
+
+    $(cart.items).each(function(i, e){
+      $('#page-cart-product' + e.id).find('.quantity').html(e.quantity);
+      $('#cart-product' + e.id).find('.quantity').html(e.quantity);
+    });
+
     $('.sidebar-wrapper#cart-wrapper .number, .wrap-header-bar .header-bar .grid-item .cart span.number').html(cart.item_count);
 
     // Скрываем панель с корзиной если там пусто
@@ -586,7 +630,15 @@ if (jQuery.fn.jquery >= '1.4') {
   // ---------------------------------------------------------
 
   Shopify.totalUpdate = function( cart ) {
-    $('.sidebar-wrapper .cart-list .block_total .total').html(Shopify.formatMoney(cart.total_price));
+    if(cart.item_count == 0) {
+      $('form.cart').remove();
+      $('.null-cart').removeClass('null-cart-hide');
+    }
+    // Сайдбар
+    $('.sidebar-wrapper .block_total .total').html(Shopify.formatMoney(cart.total_price));
+    // Страница товара
+    $('.template-cart form.cart table tbody tr td .pull-right').html(Shopify.formatMoney(cart.total_price));
+    $('.template-cart form.cart table tbody tr.total td .pull-right').html(Shopify.formatMoney(cart.total_price));
   }
 
   // ---------------------------------------------------------
@@ -601,10 +653,12 @@ if (jQuery.fn.jquery >= '1.4') {
     // Обработка ввода в поля email и password
     $email.bind('keyup keypress change', function() {
       $(this).removeClass('error');
+      $('form#customer_login').parent().find('.error-notice').addClass('error-notice__hide')
     });
 
     $password.bind('keyup keypress change', function() {
       $(this).removeClass('error');
+      $('form#customer_login').parent().find('.error-notice').addClass('error-notice__hide')
     });
 
     // Отправка данных формы аутентификации
@@ -647,6 +701,7 @@ if (jQuery.fn.jquery >= '1.4') {
 
           $email.addClass('error');
           $password.addClass('error');
+          $('form#customer_login').parent().find('.error-notice').removeClass('error-notice__hide')
 
         } else {
 
@@ -680,6 +735,7 @@ if (jQuery.fn.jquery >= '1.4') {
         console.log('length ' + result.length);
 
         $('#search .results ul').html('');
+        $('.search-sidebar .sidebar-wrapper .block_total').removeClass('show')
 
         if(result.length > 0) {
 
@@ -687,8 +743,8 @@ if (jQuery.fn.jquery >= '1.4') {
 
             console.log(e);
             $('.search-sidebar .sidebar-wrapper .results ul').append('<li>' +
-              '<div class="image"><a href="/products/' + e.handle + '"><img src="' + e.featured_image + '" alt=""></a></div>' +
-              '<div class="description"><a href="" class="title">' + e.title + '</a>' +
+              '<div class="image"><a href="/products/' + e.handle + '"><img src="' + e.featured_image.replace('_Head.', '_Head_small.').replace('_head.', '_head_small.').replace('__head.', '__head_small.').replace('__Head.', '__Head_small.') + '" alt=""></a></div>' +
+              '<div class="description"><a href="/products/' + e.handle + '" class="title">' + e.title + '</a>' +
               '<div class="price">' + Shopify.formatMoney(e.price) + '</div>' +
               '</div>' +
               '<hr/>' +
@@ -696,6 +752,9 @@ if (jQuery.fn.jquery >= '1.4') {
 
             console.log($('.search-sidebar .sidebar-wrapper .results ul').html());
           });
+
+          $('.search-sidebar .sidebar-wrapper .block_total').addClass('show').find('a').attr('href', '/search?type=product&q=' + encodeURIComponent($form.find('input[type="text"]').val()))
+          $('.search-sidebar .sidebar-wrapper .block_total').addClass('show').find('a').text('Show all ' + result.length + ' results')
 
           console.log(result);
         }

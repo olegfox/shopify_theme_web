@@ -201,8 +201,7 @@ section.main_catalog{
         margin: auto 0;
         width: 60px;
         height: 60px;
-        background: url(./Left_Arrow.svg) 0 0 no-repeat;
-        background-size: cover;
+        background: url('icon_s.svg') 0 -109px no-repeat;
         border: 0;
         font-size: 0;
         cursor: pointer;
@@ -211,8 +210,7 @@ section.main_catalog{
       .slick-next{
         left: inherit;
         right: -80px;
-        background: url(./Right_Arrow.svg) 0 0 no-repeat;
-        background-size: cover;
+        background: url('icon_s.svg') 0 -185px no-repeat;
       }
       .middle-text{
         text-align: center;
