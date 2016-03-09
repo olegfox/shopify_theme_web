@@ -5,44 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="241933e6-0888-4b41-847d-b4ea4a742883" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/sass/_cart.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/sass/_register.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/jquery.fs.stepper-arrows.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/main.coffee" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/jquery.fs.stepper-arrows.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/Futura PT Light.otf" afterPath="$PROJECT_DIR$/app/styles/FuturaPT-Light.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_account.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_account.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_base.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_catalog.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_catalog.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_fonts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_fonts.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_header.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_header.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_login.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_login.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_main_catalog.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_main_catalog.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_product.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_product.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_search.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_search.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_sidebar.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/_sidebar.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/theme.scssc" afterPath="$PROJECT_DIR$/.sass-cache/db857bfc94afb5e85cc0428dff437c53793b005d/theme.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_account.scss" afterPath="$PROJECT_DIR$/app/sass/_account.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_base.scss" afterPath="$PROJECT_DIR$/app/sass/_base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_catalog.scss" afterPath="$PROJECT_DIR$/app/sass/_catalog.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_fonts.scss" afterPath="$PROJECT_DIR$/app/sass/_fonts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_header.scss" afterPath="$PROJECT_DIR$/app/sass/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_login.scss" afterPath="$PROJECT_DIR$/app/sass/_login.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_main_catalog.scss" afterPath="$PROJECT_DIR$/app/sass/_main_catalog.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_product.scss" afterPath="$PROJECT_DIR$/app/sass/_product.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_search.scss" afterPath="$PROJECT_DIR$/app/sass/_search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_sidebar.scss" afterPath="$PROJECT_DIR$/app/sass/_sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/theme.scss" afterPath="$PROJECT_DIR$/app/sass/theme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/api.jquery.js" afterPath="$PROJECT_DIR$/app/styles/api.jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/jquery.fs.stepper.css" afterPath="$PROJECT_DIR$/app/styles/jquery.fs.stepper.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/jquery.simpler-sidebar.js" afterPath="$PROJECT_DIR$/app/styles/jquery.simpler-sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.coffee" afterPath="$PROJECT_DIR$/app/styles/main.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.js" afterPath="$PROJECT_DIR$/app/styles/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/theme.css" afterPath="$PROJECT_DIR$/app/styles/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sh" afterPath="$PROJECT_DIR$/build.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/theme.css" afterPath="$PROJECT_DIR$/styles/theme.css" />
     </list>
     <ignored path="shopify_theme_web.iws" />
@@ -67,18 +39,18 @@
       <file leaf-file-name="main.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.296297">
-              <caret line="621" column="33" selection-start-line="621" selection-start-column="33" selection-end-line="621" selection-end-column="33" />
+            <state vertical-scroll-proportion="-10.666667">
+              <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33512786">
-              <caret line="263" column="34" selection-start-line="263" selection-start-column="34" selection-end-line="263" selection-end-column="34" />
+            <state vertical-scroll-proportion="-10.470589">
+              <caret line="253" column="7" selection-start-line="253" selection-start-column="7" selection-end-line="253" selection-end-column="7" />
               <folding>
                 <element signature="e#14266#14620#0" expanded="false" />
               </folding>
@@ -86,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_catalog.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_catalog.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/_catalog.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0">
-              <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.17532468">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_product.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/_product.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,16 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.5">
               <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sass/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.647058">
-              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -163,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/build.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -212,18 +184,18 @@
         <option value="$PROJECT_DIR$/app/styles/api.jquery.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/sass/_main_catalog.scss" />
-        <option value="$PROJECT_DIR$/app/sass/_product.scss" />
         <option value="$PROJECT_DIR$/app/sass/theme.scss" />
         <option value="$PROJECT_DIR$/app/sass/_account.scss" />
-        <option value="$PROJECT_DIR$/build.sh" />
-        <option value="$PROJECT_DIR$/app/styles/main.coffee" />
         <option value="$PROJECT_DIR$/app/sass/_header.scss" />
         <option value="$PROJECT_DIR$/app/sass/_login.scss" />
         <option value="$PROJECT_DIR$/app/sass/_sidebar.scss" />
         <option value="$PROJECT_DIR$/app/sass/_search.scss" />
         <option value="$PROJECT_DIR$/app/sass/_cart.scss" />
-        <option value="$PROJECT_DIR$/app/sass/_catalog.scss" />
+        <option value="$PROJECT_DIR$/build.sh" />
         <option value="$PROJECT_DIR$/app/sass/_base.scss" />
+        <option value="$PROJECT_DIR$/app/styles/main.coffee" />
+        <option value="$PROJECT_DIR$/app/sass/_product.scss" />
+        <option value="$PROJECT_DIR$/app/sass/_catalog.scss" />
       </list>
     </option>
   </component>
@@ -233,8 +205,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="394" />
-    <option name="y" value="171" />
+    <option name="x" value="404" />
+    <option name="y" value="143" />
     <option name="width" value="1780" />
     <option name="height" value="1191" />
   </component>
@@ -308,6 +280,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopify_theme_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopify_theme_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,7 +444,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="394" y="171" width="1780" height="1191" extended-state="0" />
+    <frame x="404" y="143" width="1780" height="1191" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30699262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -771,34 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_product.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="205" column="24" selection-start-line="205" selection-start-column="24" selection-end-line="205" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.296297">
-          <caret line="621" column="33" selection-start-line="621" selection-start-column="33" selection-end-line="621" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -854,21 +820,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_catalog.scss">
+    <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33512786">
-          <caret line="263" column="34" selection-start-line="263" selection-start-column="34" selection-end-line="263" selection-end-column="34" />
+        <state vertical-scroll-proportion="-10.470589">
+          <caret line="253" column="7" selection-start-line="253" selection-start-column="7" selection-end-line="253" selection-end-column="7" />
           <folding>
             <element signature="e#14266#14620#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.666667">
+          <caret line="132" column="27" selection-start-line="132" selection-start-column="27" selection-end-line="132" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/_product.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/_catalog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17532468">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

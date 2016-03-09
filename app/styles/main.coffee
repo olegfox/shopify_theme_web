@@ -28,6 +28,17 @@ $ ->
     false
 
   ###*
+  # Кастомизация пагинатора
+  ###
+  customPaginate = () ->
+    if $('.pagination').length > 0 && $('.pagination ul li').length > 5
+      if $('.pagination li:first-child a').length > 0 && $('.pagination li').eq(1).text() != '2'
+        $('.pagination li:first-child').remove()
+      $('.pagination li').eq($('.pagination li').length - 2).remove()
+
+  customPaginate()
+
+  ###*
   # Каталог товаров
   ###
 
@@ -105,6 +116,8 @@ $ ->
           $newFooterCatalog.insertAfter $oldFooterCatalog
           $oldFooterCatalog.remove()
           $('.items-catalog ul').append(filteredData).masonry 'appended', filteredData
+          # Кастомизация пагинатора
+          customPaginate()
           # Обрезка фотографий в каталоге
           cropImagesCatalog $('.items-catalog ul li canvas.new')
           scrollNode.show()

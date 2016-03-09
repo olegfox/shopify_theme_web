@@ -9,7 +9,7 @@
      * detect IE
      * returns version of IE or false, if browser is not Internet Explorer
      */
-    var $countryDefault, $form, calculateProductBlock, cartStickMenuSidebar, cityChange, closeSignIn, convertImgToDataURLviaCanvas, cropImagesCatalog, descriptionString, detailsArray, detailsString, detectIE, eventScroll, hash, i, info, listCollectionClick, loadMore, optionsArray, optionsString, parse, socialStickMenuSidebar, time;
+    var $countryDefault, $form, calculateProductBlock, cartStickMenuSidebar, cityChange, closeSignIn, convertImgToDataURLviaCanvas, cropImagesCatalog, customPaginate, descriptionString, detailsArray, detailsString, detectIE, eventScroll, hash, i, info, listCollectionClick, loadMore, optionsArray, optionsString, parse, socialStickMenuSidebar, time;
     detectIE = function() {
       var edge, msie, rv, trident, ua;
       ua = window.navigator.userAgent;
@@ -28,6 +28,19 @@
       }
       return false;
     };
+
+    /**
+     * Кастомизация пагинатора
+     */
+    customPaginate = function() {
+      if ($('.pagination').length > 0 && $('.pagination ul li').length > 5) {
+        if ($('.pagination li:first-child a').length > 0 && $('.pagination li').eq(1).text() !== '2') {
+          $('.pagination li:first-child').remove();
+        }
+        return $('.pagination li').eq($('.pagination li').length - 2).remove();
+      }
+    };
+    customPaginate();
 
     /**
      * Каталог товаров
@@ -94,6 +107,7 @@
             $newFooterCatalog.insertAfter($oldFooterCatalog);
             $oldFooterCatalog.remove();
             $('.items-catalog ul').append(filteredData).masonry('appended', filteredData);
+            customPaginate();
             cropImagesCatalog($('.items-catalog ul li canvas.new'));
             scrollNode.show();
             if ($('.footer-catalog .btn-load-more').length > 0) {

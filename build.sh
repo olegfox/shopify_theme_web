@@ -19,4 +19,5 @@ grunt shopify:upload:shop/snippets/search-bar.liquid
 grunt shopify:upload:shop/snippets/site-nav.liquid
 grunt shopify:upload:shop/snippets/login.liquid
 grunt shopify:upload:shop/snippets/search-sorting.liquid
+grunt shopify:upload:shop/snippets/pagination-custom.liquid
 grunt shopify:upload:shop/templates/customers/register.liquid
